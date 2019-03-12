@@ -13,6 +13,8 @@ class Weight_ViewController: UIViewController {
     @IBOutlet weak var btnBack: UIBarButtonItem!
     @IBOutlet weak var Keyboard: UIView!
     @IBOutlet weak var lblWelcome: UILabel!
+    @IBOutlet weak var lblError: UILabel!
+    
     //text boxes
     @IBOutlet weak var txtKg: UITextField!
     @IBOutlet weak var txtGrams: UITextField!
@@ -28,7 +30,6 @@ class Weight_ViewController: UIViewController {
         super.viewDidLoad()
         
         Keyboard.isHidden = true
-        KeyboardButtonMinus.isEnabled = false
         
         txtKg.isSelected = false
         txtGrams.isSelected = false
@@ -563,13 +564,23 @@ class Weight_ViewController: UIViewController {
                     PoundsSelected(Double(txtPounds.text!)!)
                 }
             }
-        case ".": break
+        case ".":
             // .
-            
-        //
-        case "-": break
-            // -
-            
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text?.contains("."))!
+                {
+                    
+                } else
+                {
+                 txtKg.text = txtKg.text! + "."
+                 KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            //
+        case "-":
+        // -
+            lblError.text = "Sorry, this is not available."
         //
         case "DEL":
         // DEL

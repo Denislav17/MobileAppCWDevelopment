@@ -35,8 +35,8 @@ class Weight_ViewController: UIViewController {
         txtGrams.isSelected = false
         txtOunces.isSelected = false
         txtPounds.isSelected = false
-//        txtStone.isSelected = false
-//        txtPound.isSelected = false
+        txtStone.isSelected = false
+        txtPound.isSelected = false
 
         // Do any additional setup after loading the view.
     }
@@ -137,21 +137,45 @@ class Weight_ViewController: UIViewController {
         txtGrams.text = String(format:"%.2f", kg*1000)
         txtOunces.text = String(format:"%.2f", kg*35.274)
         txtPounds.text = String(format:"%.2f", kg*2.205)
+        
+        //Stone/Pounds Calc
+        var stonePounds = kg/6.35
+        let modfStonePounds = modf(stonePounds)
+        txtStone.text = String(format:"%.2f", modfStonePounds.0)
+        txtPound.text = String(format:"%.2f", modfStonePounds.1)
     }
     func GramsSelected(_ grams:Double) -> Void {
         txtKg.text = String(format:"%.2f", grams/1000)
         txtOunces.text = String(format:"%.2f", grams/28.35)
         txtPounds.text = String(format:"%.2f", grams/453.592)
+        
+        //Stone/Pounds Calc
+        var stonePounds = grams/6350.293
+        let modfStonePounds = modf(stonePounds)
+        txtStone.text = String(format:"%.2f", modfStonePounds.0)
+        txtPound.text = String(format:"%.2f", modfStonePounds.1)
     }
     func OuncesSelected(_ ounces: Double) -> Void {
         txtKg.text = String(format:"%.2f", ounces/35.274)
         txtGrams.text = String(format:"%.2f", ounces*28.35)
         txtPounds.text = String(format:"%.2f", ounces/16)
+        
+        //Stone/Pounds Calc
+        var stonePounds = ounces/224
+        let modfStonePounds = modf(stonePounds)
+        txtStone.text = String(format:"%.2f", modfStonePounds.0)
+        txtPound.text = String(format:"%.2f", modfStonePounds.1)
     }
     func PoundsSelected(_ pounds: Double) -> Void{
         txtKg.text = String(format:"%.2f", pounds/2.205)
         txtGrams.text = String(format:"%.2f", pounds*453.592)
         txtOunces.text = String(format:"%.2f", pounds*16)
+        
+        //Stone/Pounds Calc
+        var stonePounds = pounds/14
+        let modfStonePounds = modf(stonePounds)
+        txtStone.text = String(format:"%.2f", modfStonePounds.0)
+        txtPound.text = String(format:"%.2f", modfStonePounds.1)
     }
     //End of Calcs and Convs
     //Buttons Area Func
@@ -659,6 +683,9 @@ class Weight_ViewController: UIViewController {
         txtGrams.text = ""
         txtOunces.text = ""
         txtPounds.text = ""
+        txtStone.text = ""
+        txtPound.text = ""
+        
         
         txtKg.isSelected = false
         txtGrams.isSelected = false

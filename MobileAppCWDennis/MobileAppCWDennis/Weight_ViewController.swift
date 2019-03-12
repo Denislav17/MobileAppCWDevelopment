@@ -21,10 +21,14 @@ class Weight_ViewController: UIViewController {
     @IBOutlet weak var txtStone: UITextField!
     @IBOutlet weak var txtPound: UITextField!
     //end of text boxes
+    //Keyboard explicit outlets
+    @IBOutlet weak var KeyboardButtonMinus: UIButton!
+    //end of keyboard explicit outlets
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Keyboard.isHidden = true
+        KeyboardButtonMinus.isEnabled = false
         
         txtKg.isSelected = false
         txtGrams.isSelected = false
@@ -157,27 +161,454 @@ class Weight_ViewController: UIViewController {
     
     
     //Keyboard Func
-    @IBAction func keyboardButton1_Tapped(_ sender: UIButton) {
+    @IBAction func keyboardButton_Tapped(_ sender: UIButton) {
         switch (sender.titleLabel?.text) {
         case "1":
+            // 1
             if(txtKg.isSelected)
             {
+                if(txtKg.text == "0") {
+                txtKg.text = "1"
+                KilogramsSelected(Double(txtKg.text!)!)
+                } else {
                 txtKg.text = txtKg.text! + "1"
                 KilogramsSelected(Double(txtKg.text!)!)
+                }
             }
             if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                txtGrams.text = "1"
+                GramsSelected(Double(txtGrams.text!)!)
+                } else {
                 txtGrams.text = txtGrams.text! + "1"
                 GramsSelected(Double(txtGrams.text!)!)
+                }
             }
             if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "1"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
                 txtOunces.text = txtOunces.text! + "1"
                 OuncesSelected(Double(txtOunces.text!)!)
+                }
             }
             if(txtPounds.isSelected)
             {
+                if(txtPounds.text == "0"){
+                txtPounds.text = "1"
+                PoundsSelected(Double(txtPounds.text!)!)
+                } else {
                 txtPounds.text = txtPounds.text! + "1"
                 PoundsSelected(Double(txtPounds.text!)!)
+                }
             }
+        case "2":
+            // 2
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "2"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "2"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "2"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "2"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "2"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "2"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "2"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "2"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "3":
+            // 3
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "3"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "3"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "3"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "3"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "3"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "3"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "3"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "3"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "4":
+            // 4
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "4"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "4"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "4"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "4"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "4"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "4"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "4"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "4"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "5":
+            // 5
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "5"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "5"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "5"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "5"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "5"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "5"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "5"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "5"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "6":
+            // 6
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "6"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "6"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "6"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "6"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "6"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "6"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "6"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "6"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "7":
+            // 7
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "7"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "7"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "7"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "7"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "7"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "7"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "7"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "7"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "8":
+            // 8
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "8"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "8"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "8"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "8"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "8"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "8"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "8"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "8"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "9":
+            // 9
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "9"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "9"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "9"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "9"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "9"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "9"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "9"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "9"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case "0":
+            // 0
+            if(txtKg.isSelected)
+            {
+                if(txtKg.text == "0") {
+                    txtKg.text = "0"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                } else {
+                    txtKg.text = txtKg.text! + "0"
+                    KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if (txtGrams.isSelected) {
+                if(txtGrams.text == "0"){
+                    txtGrams.text = "0"
+                    GramsSelected(Double(txtGrams.text!)!)
+                } else {
+                    txtGrams.text = txtGrams.text! + "0"
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if (txtOunces.isSelected){
+                if(txtOunces.text == "0"){
+                    txtOunces.text = "0"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                } else {
+                    txtOunces.text = txtOunces.text! + "0"
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            {
+                if(txtPounds.text == "0"){
+                    txtPounds.text = "0"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                } else {
+                    txtPounds.text = txtPounds.text! + "0"
+                    PoundsSelected(Double(txtPounds.text!)!)
+                }
+            }
+        case ".": break
+            // .
+            
+        //
+        case "-": break
+            // -
+            
+        //
+        case "DEL":
+        // DEL
+        if(txtKg.isSelected)
+        {
+            txtKg.text = String((txtKg.text?.dropLast())!)
+            if(txtKg.text == "")
+            {
+               txtKg.text = "0"
+            }
+            KilogramsSelected(Double(txtKg.text!)!)
+        }
+        
+        if (txtGrams.isSelected) {
+            txtGrams.text = String((txtGrams.text?.dropLast())!)
+            if(txtGrams.text == "")
+            {
+                txtGrams.text = "0"
+            }
+            GramsSelected(Double(txtGrams.text!)!)
+        }
+        if (txtOunces.isSelected){
+            txtOunces.text = String((txtOunces.text?.dropLast())!)
+            if(txtOunces.text == "")
+            {
+                txtOunces.text = "0"
+            }
+            OuncesSelected(Double(txtOunces.text!)!)
+        }
+        if(txtPounds.isSelected)
+        {
+            txtPounds.text = String((txtPounds.text?.dropLast())!)
+            if(txtPounds.text == "")
+            {
+                txtPounds.text = "0"
+            }
+            PoundsSelected(Double(txtOunces.text!)!)
+        }
+        //
             
         default:
             break;

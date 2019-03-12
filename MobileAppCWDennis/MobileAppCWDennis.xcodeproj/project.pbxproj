@@ -14,14 +14,15 @@
 		EE227B5C2237DC7A00094700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE227B5B2237DC7A00094700 /* Assets.xcassets */; };
 		EE227B5F2237DC7A00094700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE227B5D2237DC7A00094700 /* LaunchScreen.storyboard */; };
 		EE227B7B2237E1F100094700 /* Weight_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B7A2237E1F100094700 /* Weight_ViewController.swift */; };
-		EE227B862237FE8700094700 /* distance icon 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B7E2237FE8500094700 /* distance icon 50p.png */; };
-		EE227B872237FE8700094700 /* convert.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B7F2237FE8600094700 /* convert.png */; };
-		EE227B882237FE8700094700 /* saveIocn.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B802237FE8600094700 /* saveIocn.png */; };
-		EE227B892237FE8700094700 /* temperature 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B812237FE8600094700 /* temperature 50p.png */; };
-		EE227B8A2237FE8700094700 /* speedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B822237FE8600094700 /* speedIcon.png */; };
-		EE227B8B2237FE8700094700 /* Kg_weight 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B832237FE8600094700 /* Kg_weight 50p.png */; };
-		EE227B8C2237FE8700094700 /* history-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B842237FE8600094700 /* history-512.png */; };
-		EE227B8D2237FE8700094700 /* liquidVol.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B852237FE8600094700 /* liquidVol.png */; };
+		EE227B9722380BB500094700 /* distance icon 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B8E22380BB200094700 /* distance icon 50p.png */; };
+		EE227B9822380BB500094700 /* convert.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B8F22380BB300094700 /* convert.png */; };
+		EE227B9922380BB500094700 /* saveIocn.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9022380BB300094700 /* saveIocn.png */; };
+		EE227B9A22380BB500094700 /* temperature 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9122380BB300094700 /* temperature 50p.png */; };
+		EE227B9B22380BB500094700 /* cubeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9222380BB400094700 /* cubeIcon.png */; };
+		EE227B9C22380BB500094700 /* speedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9322380BB400094700 /* speedIcon.png */; };
+		EE227B9D22380BB500094700 /* Kg_weight 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9422380BB400094700 /* Kg_weight 50p.png */; };
+		EE227B9E22380BB500094700 /* history-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9522380BB400094700 /* history-512.png */; };
+		EE227B9F22380BB500094700 /* liquidVol.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9622380BB500094700 /* liquidVol.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +35,15 @@
 		EE227B5E2237DC7A00094700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE227B602237DC7A00094700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE227B7A2237E1F100094700 /* Weight_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight_ViewController.swift; sourceTree = "<group>"; };
-		EE227B7E2237FE8500094700 /* distance icon 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "distance icon 50p.png"; path = "../../../Desktop/CW/CWDennis/CWDennis/distance icon 50p.png"; sourceTree = "<group>"; };
-		EE227B7F2237FE8600094700 /* convert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = convert.png; path = ../../../Desktop/CW/CWDennis/CWDennis/convert.png; sourceTree = "<group>"; };
-		EE227B802237FE8600094700 /* saveIocn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveIocn.png; path = ../../../Desktop/CW/CWDennis/CWDennis/saveIocn.png; sourceTree = "<group>"; };
-		EE227B812237FE8600094700 /* temperature 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "temperature 50p.png"; path = "../../../Desktop/CW/CWDennis/CWDennis/temperature 50p.png"; sourceTree = "<group>"; };
-		EE227B822237FE8600094700 /* speedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedIcon.png; path = ../../../Desktop/CW/CWDennis/CWDennis/speedIcon.png; sourceTree = "<group>"; };
-		EE227B832237FE8600094700 /* Kg_weight 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Kg_weight 50p.png"; path = "../../../Desktop/CW/CWDennis/CWDennis/Kg_weight 50p.png"; sourceTree = "<group>"; };
-		EE227B842237FE8600094700 /* history-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "history-512.png"; path = "../../../Desktop/CW/CWDennis/CWDennis/history-512.png"; sourceTree = "<group>"; };
-		EE227B852237FE8600094700 /* liquidVol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = liquidVol.png; path = ../../../Desktop/CW/CWDennis/CWDennis/liquidVol.png; sourceTree = "<group>"; };
+		EE227B8E22380BB200094700 /* distance icon 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "distance icon 50p.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/distance icon 50p.png"; sourceTree = "<group>"; };
+		EE227B8F22380BB300094700 /* convert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = convert.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/convert.png; sourceTree = "<group>"; };
+		EE227B9022380BB300094700 /* saveIocn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveIocn.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/saveIocn.png; sourceTree = "<group>"; };
+		EE227B9122380BB300094700 /* temperature 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "temperature 50p.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/temperature 50p.png"; sourceTree = "<group>"; };
+		EE227B9222380BB400094700 /* cubeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cubeIcon.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/cubeIcon.png; sourceTree = "<group>"; };
+		EE227B9322380BB400094700 /* speedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedIcon.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/speedIcon.png; sourceTree = "<group>"; };
+		EE227B9422380BB400094700 /* Kg_weight 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Kg_weight 50p.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/Kg_weight 50p.png"; sourceTree = "<group>"; };
+		EE227B9522380BB400094700 /* history-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "history-512.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/history-512.png"; sourceTree = "<group>"; };
+		EE227B9622380BB500094700 /* liquidVol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = liquidVol.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/liquidVol.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,15 @@
 		EE227B452237DC7100094700 = {
 			isa = PBXGroup;
 			children = (
-				EE227B7F2237FE8600094700 /* convert.png */,
-				EE227B7E2237FE8500094700 /* distance icon 50p.png */,
-				EE227B842237FE8600094700 /* history-512.png */,
-				EE227B832237FE8600094700 /* Kg_weight 50p.png */,
-				EE227B852237FE8600094700 /* liquidVol.png */,
-				EE227B802237FE8600094700 /* saveIocn.png */,
-				EE227B822237FE8600094700 /* speedIcon.png */,
-				EE227B812237FE8600094700 /* temperature 50p.png */,
+				EE227B8F22380BB300094700 /* convert.png */,
+				EE227B9222380BB400094700 /* cubeIcon.png */,
+				EE227B9522380BB400094700 /* history-512.png */,
+				EE227B9422380BB400094700 /* Kg_weight 50p.png */,
+				EE227B9622380BB500094700 /* liquidVol.png */,
+				EE227B9322380BB400094700 /* speedIcon.png */,
+				EE227B8E22380BB200094700 /* distance icon 50p.png */,
+				EE227B9022380BB300094700 /* saveIocn.png */,
+				EE227B9122380BB300094700 /* temperature 50p.png */,
 				EE227B502237DC7100094700 /* MobileAppCWDennis */,
 				EE227B4F2237DC7100094700 /* Products */,
 			);
@@ -152,15 +155,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE227B8D2237FE8700094700 /* liquidVol.png in Resources */,
-				EE227B8B2237FE8700094700 /* Kg_weight 50p.png in Resources */,
-				EE227B872237FE8700094700 /* convert.png in Resources */,
-				EE227B882237FE8700094700 /* saveIocn.png in Resources */,
-				EE227B8C2237FE8700094700 /* history-512.png in Resources */,
-				EE227B8A2237FE8700094700 /* speedIcon.png in Resources */,
-				EE227B892237FE8700094700 /* temperature 50p.png in Resources */,
+				EE227B9D22380BB500094700 /* Kg_weight 50p.png in Resources */,
+				EE227B9C22380BB500094700 /* speedIcon.png in Resources */,
+				EE227B9E22380BB500094700 /* history-512.png in Resources */,
+				EE227B9822380BB500094700 /* convert.png in Resources */,
+				EE227B9F22380BB500094700 /* liquidVol.png in Resources */,
+				EE227B9722380BB500094700 /* distance icon 50p.png in Resources */,
+				EE227B9922380BB500094700 /* saveIocn.png in Resources */,
+				EE227B9B22380BB500094700 /* cubeIcon.png in Resources */,
 				EE227B5F2237DC7A00094700 /* LaunchScreen.storyboard in Resources */,
-				EE227B862237FE8700094700 /* distance icon 50p.png in Resources */,
+				EE227B9A22380BB500094700 /* temperature 50p.png in Resources */,
 				EE227B5C2237DC7A00094700 /* Assets.xcassets in Resources */,
 				EE227B572237DC7100094700 /* Main.storyboard in Resources */,
 			);

@@ -102,7 +102,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kilograms" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faY-rB-kPF">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kilograms" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="faY-rB-kPF">
                                         <rect key="frame" x="148" y="39" width="187" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -112,7 +112,7 @@
                                             <action selector="txtKg_Selected:" destination="nJe-Sh-Ctb" eventType="touchDown" id="jGI-n0-JeR"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="grams" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0db-xl-dq4">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="grams" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0db-xl-dq4">
                                         <rect key="frame" x="148" y="78" width="187" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -122,7 +122,7 @@
                                             <action selector="txtGrams_Selected:" destination="nJe-Sh-Ctb" eventType="touchDown" id="2KZ-jg-qhM"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ounces" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-R3-Iz1">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ounces" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-R3-Iz1">
                                         <rect key="frame" x="148" y="119" width="187" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -132,7 +132,7 @@
                                             <action selector="txtOunces_Selected:" destination="nJe-Sh-Ctb" eventType="touchDown" id="CTX-rO-UZV"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pounds" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSz-DF-EYA">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pounds" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jSz-DF-EYA">
                                         <rect key="frame" x="148" y="158" width="187" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -200,7 +200,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton1_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="vpJ-ff-gm1"/>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="0CL-Ei-PHO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBD-bj-orx">
@@ -209,6 +209,9 @@
                                         <state key="normal" title="2">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="Pxu-Ag-GT6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU5-00-7s9">
                                         <rect key="frame" x="87" y="8" width="30" height="30"/>
@@ -216,6 +219,9 @@
                                         <state key="normal" title="3">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="WKk-sR-yFN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFj-ne-3bI">
                                         <rect key="frame" x="299" y="8" width="30" height="30"/>
@@ -223,6 +229,9 @@
                                         <state key="normal" title="9">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="mXx-dh-0Vz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVG-vN-hfI">
                                         <rect key="frame" x="123" y="8" width="30" height="30"/>
@@ -230,6 +239,9 @@
                                         <state key="normal" title="4">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="4KG-LS-tdr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7A-fi-twE">
                                         <rect key="frame" x="158" y="8" width="30" height="30"/>
@@ -237,6 +249,9 @@
                                         <state key="normal" title="5">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="ulP-PF-JJk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iod-aJ-xYf">
                                         <rect key="frame" x="194" y="8" width="30" height="30"/>
@@ -244,6 +259,9 @@
                                         <state key="normal" title="6">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="CoH-qt-CEQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-pQ-F7b">
                                         <rect key="frame" x="229" y="8" width="30" height="30"/>
@@ -251,6 +269,9 @@
                                         <state key="normal" title="7">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="YNk-ui-4HV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRL-Re-1fh">
                                         <rect key="frame" x="264" y="8" width="30" height="30"/>
@@ -258,6 +279,9 @@
                                         <state key="normal" title="8">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="1qu-6h-4B5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3R-oT-fMg">
                                         <rect key="frame" x="103" y="39" width="30" height="30"/>
@@ -265,6 +289,9 @@
                                         <state key="normal" title="0">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="6eH-3T-ivY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JZ-YJ-tNq">
                                         <rect key="frame" x="211" y="39" width="30" height="30"/>
@@ -272,6 +299,9 @@
                                         <state key="normal" title="DEL">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="lUE-ka-ViO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqM-cY-ou7">
                                         <rect key="frame" x="139" y="39" width="30" height="30"/>
@@ -279,6 +309,9 @@
                                         <state key="normal" title="[ . ]">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="hP4-lE-nS1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4B-Jk-gZf">
                                         <rect key="frame" x="175" y="39" width="30" height="30"/>
@@ -286,6 +319,9 @@
                                         <state key="normal" title="[ - ]">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="D5i-52-Pbm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-S5-ocq">
                                         <rect key="frame" x="248" y="39" width="47" height="30"/>
@@ -353,6 +389,7 @@
                     </view>
                     <connections>
                         <outlet property="Keyboard" destination="H5h-AC-DBr" id="tXi-Zi-qVl"/>
+                        <outlet property="KeyboardButtonMinus" destination="V4B-Jk-gZf" id="wjg-zo-q62"/>
                         <outlet property="btnBack" destination="ycx-5h-ZeU" id="6o3-AQ-bG3"/>
                         <outlet property="lblWelcome" destination="03m-am-1uW" id="3gd-u0-aCY"/>
                         <outlet property="txtGrams" destination="0db-xl-dq4" id="OHs-NA-oRb"/>
@@ -366,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6co-EQ-ukH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="729.08545727136436"/>
+            <point key="canvasLocation" x="25" y="986"/>
         </scene>
     </scenes>
     <resources>

@@ -23,6 +23,7 @@
 		EE227B9D22380BB500094700 /* Kg_weight 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9422380BB400094700 /* Kg_weight 50p.png */; };
 		EE227B9E22380BB500094700 /* history-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9522380BB400094700 /* history-512.png */; };
 		EE227B9F22380BB500094700 /* liquidVol.png in Resources */ = {isa = PBXBuildFile; fileRef = EE227B9622380BB500094700 /* liquidVol.png */; };
+		EE227BA222382FEE00094700 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227BA122382FEE00094700 /* Weight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EE227B9422380BB400094700 /* Kg_weight 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Kg_weight 50p.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/Kg_weight 50p.png"; sourceTree = "<group>"; };
 		EE227B9522380BB400094700 /* history-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "history-512.png"; path = "../../../../Desktop/CW/CWDennis/CWDennis/history-512.png"; sourceTree = "<group>"; };
 		EE227B9622380BB500094700 /* liquidVol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = liquidVol.png; path = ../../../../Desktop/CW/CWDennis/CWDennis/liquidVol.png; sourceTree = "<group>"; };
+		EE227BA122382FEE00094700 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		EE227B502237DC7100094700 /* MobileAppCWDennis */ = {
 			isa = PBXGroup;
 			children = (
+				EE227BA022382FC400094700 /* Objects */,
 				EE227B512237DC7100094700 /* AppDelegate.swift */,
 				EE227B532237DC7100094700 /* ViewController.swift */,
 				EE227B552237DC7100094700 /* Main.storyboard */,
@@ -95,6 +98,14 @@
 				EE227B7A2237E1F100094700 /* Weight_ViewController.swift */,
 			);
 			path = MobileAppCWDennis;
+			sourceTree = "<group>";
+		};
+		EE227BA022382FC400094700 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				EE227BA122382FEE00094700 /* Weight.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE227BA222382FEE00094700 /* Weight.swift in Sources */,
 				EE227B7B2237E1F100094700 /* Weight_ViewController.swift in Sources */,
 				EE227B5A2237DC7100094700 /* MobileAppCWDennis.xcdatamodeld in Sources */,
 				EE227B542237DC7100094700 /* ViewController.swift in Sources */,

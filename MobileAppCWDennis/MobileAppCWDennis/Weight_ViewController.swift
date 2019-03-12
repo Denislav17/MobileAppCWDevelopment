@@ -143,6 +143,8 @@ class Weight_ViewController: UIViewController {
         let modfStonePounds = modf(stonePounds)
         txtStone.text = String(format:"%.2f", modfStonePounds.0)
         txtPound.text = String(format:"%.2f", modfStonePounds.1)
+        
+        //let kgWeight = Weight(kg: kg, gr: Double(txtGrams.text!)!, ounc: Double(txtOunces.text!)!, pounds: Double(txtPounds.text!)!, stone: Double(txtStone.text!)!, pound: Double(txtPound.text!)!)
     }
     func GramsSelected(_ grams:Double) -> Void {
         txtKg.text = String(format:"%.2f", grams/1000)
@@ -691,6 +693,8 @@ class Weight_ViewController: UIViewController {
         txtGrams.isSelected = false
         txtOunces.isSelected = false
         txtPounds.isSelected = false
+        
+        
 
     }
     

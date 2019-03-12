@@ -17,10 +17,6 @@ public class Weight {
     var _stone: Double
     var _pound: Double
     
-    init() {
-        
-    }
-    
     init(kg:Double,gr:Double,ounc:Double,pounds:Double,stone:Double,pound:Double){
         _kilograms = kg
         _grams = gr

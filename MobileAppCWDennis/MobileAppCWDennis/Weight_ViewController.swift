@@ -134,24 +134,24 @@ class Weight_ViewController: UIViewController {
     
     //Calculations and Conversions
     func KilogramsSelected(_ kg: Double) -> Void {
-        txtGrams.text = String(format:"%.5f", kg*1000)
-        txtOunces.text = String(format:"%.5f", kg*35.274)
-        txtPounds.text = String(format:"%.5f", kg*2.205)
+        txtGrams.text = String(format:"%.2f", kg*1000)
+        txtOunces.text = String(format:"%.2f", kg*35.274)
+        txtPounds.text = String(format:"%.2f", kg*2.205)
     }
     func GramsSelected(_ grams:Double) -> Void {
-        txtKg.text = String(format:"%.5f", grams/1000)
-        txtOunces.text = String(format:"%.5f", grams/28.35)
-        txtPounds.text = String(format:"%.5f", grams/453.592)
+        txtKg.text = String(format:"%.2f", grams/1000)
+        txtOunces.text = String(format:"%.2f", grams/28.35)
+        txtPounds.text = String(format:"%.2f", grams/453.592)
     }
     func OuncesSelected(_ ounces: Double) -> Void {
-        txtKg.text = String(format:"%.5f", ounces/35.274)
-        txtGrams.text = String(format:"%.5f", ounces*28.35)
-        txtPounds.text = String(format:"%.5f", ounces/16)
+        txtKg.text = String(format:"%.2f", ounces/35.274)
+        txtGrams.text = String(format:"%.2f", ounces*28.35)
+        txtPounds.text = String(format:"%.2f", ounces/16)
     }
     func PoundsSelected(_ pounds: Double) -> Void{
-        txtKg.text = String(format:"%.5f", pounds/2.205)
-        txtGrams.text = String(format:"%.5f", pounds*453.592)
-        txtOunces.text = String(format:"%.5f", pounds*16)
+        txtKg.text = String(format:"%.2f", pounds/2.205)
+        txtGrams.text = String(format:"%.2f", pounds*453.592)
+        txtOunces.text = String(format:"%.2f", pounds*16)
     }
     //End of Calcs and Convs
     //Buttons Area Func
@@ -567,14 +567,39 @@ class Weight_ViewController: UIViewController {
         case ".":
             // .
             if(txtKg.isSelected)
-            {
-                if(txtKg.text?.contains("."))!
+            { if(txtKg.text?.contains("."))!
                 {
-                    
-                } else
-                {
+                lblError.text = "Sorry, you can't add '.' twice!"
+                } else {
                  txtKg.text = txtKg.text! + "."
                  KilogramsSelected(Double(txtKg.text!)!)
+                }
+            }
+            if(txtGrams.isSelected)
+            { if(txtGrams.text?.contains("."))!
+                {
+                lblError.text = "Sorry, you can't add '.' twice!"
+                } else {
+                    txtGrams.text = txtGrams.text! + "."
+                    GramsSelected(Double(txtGrams.text!)!)
+                }
+            }
+            if(txtOunces.isSelected)
+            { if(txtOunces.text?.contains("."))!
+                {
+                lblError.text = "Sorry, you can't add '.' twice!"
+                } else {
+                    txtOunces.text = txtOunces.text! + "."
+                    OuncesSelected(Double(txtOunces.text!)!)
+                }
+            }
+            if(txtPounds.isSelected)
+            { if(txtPounds.text?.contains("."))!
+                {
+                lblError.text = "Sorry, you can't add '.' twice!"
+                } else {
+                    txtPounds.text = txtPounds.text! + "."
+                    PoundsSelected(Double(txtPounds.text!)!)
                 }
             }
             //
@@ -617,7 +642,7 @@ class Weight_ViewController: UIViewController {
             {
                 txtPounds.text = "0"
             }
-            PoundsSelected(Double(txtOunces.text!)!)
+            PoundsSelected(Double(txtPounds.text!)!)
         }
         //
             

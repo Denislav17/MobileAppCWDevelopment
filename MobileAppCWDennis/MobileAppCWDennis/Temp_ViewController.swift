@@ -476,9 +476,16 @@ class Temp_ViewController: UIViewController {
                 {
                     txtKelvin.text = "0"
                 }
-                lblError.text = ""	
+                lblError.text = ""
                 KelvinSelected(Double(txtKelvin.text!)!)
             }
+        case "CLEAR":
+            txtCelsius.text = "0"
+            txtCelsius.isSelected = true
+            txtFahrenheit.isSelected = false
+            txtKelvin.isSelected = false
+            lblError.text = ""
+            CelsiusSelected(Double(txtCelsius.text!)!)
             //
             
         default:

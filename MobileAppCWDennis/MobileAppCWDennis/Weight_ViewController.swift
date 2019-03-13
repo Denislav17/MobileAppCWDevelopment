@@ -167,7 +167,7 @@ class Weight_ViewController: UIViewController {
         txtPounds.text = String(format:"%.2f", kg*2.205)
         
         //Stone/Pounds Calc
-        var stonePounds = kg/6.35
+        let stonePounds = kg/6.35
         let modfStonePounds = modf(stonePounds)
         txtStone.text = String(format:"%.2f", modfStonePounds.0)
         txtPound.text = String(format:"%.2f", modfStonePounds.1)
@@ -180,7 +180,7 @@ class Weight_ViewController: UIViewController {
         txtPounds.text = String(format:"%.2f", grams/453.592)
         
         //Stone/Pounds Calc
-        var stonePounds = grams/6350.293
+        let stonePounds = grams/6350.293
         let modfStonePounds = modf(stonePounds)
         txtStone.text = String(format:"%.2f", modfStonePounds.0)
         txtPound.text = String(format:"%.2f", modfStonePounds.1)
@@ -191,7 +191,7 @@ class Weight_ViewController: UIViewController {
         txtPounds.text = String(format:"%.2f", ounces/16)
         
         //Stone/Pounds Calc
-        var stonePounds = ounces/224
+        let stonePounds = ounces/224
         let modfStonePounds = modf(stonePounds)
         txtStone.text = String(format:"%.2f", modfStonePounds.0)
         txtPound.text = String(format:"%.2f", modfStonePounds.1)
@@ -202,7 +202,7 @@ class Weight_ViewController: UIViewController {
         txtOunces.text = String(format:"%.2f", pounds*16)
         
         //Stone/Pounds Calc
-        var stonePounds = pounds/14
+        let stonePounds = pounds/14
         let modfStonePounds = modf(stonePounds)
         txtStone.text = String(format:"%.2f", modfStonePounds.0)
         txtPound.text = String(format:"%.2f", modfStonePounds.1)

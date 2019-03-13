@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var btnWeight: UIBarButtonItem!
+    @IBOutlet weak var btnTemp: UIBarButtonItem!
     
     
     
@@ -27,6 +28,9 @@ class ViewController: UIViewController {
 
     @IBAction func btnWeight_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_WeightPage", sender:self)
+    }
+    @IBAction func btnTemp_Clicked(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "Id_TempPage", sender: self)
     }
     
 }

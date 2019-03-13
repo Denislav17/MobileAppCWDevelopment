@@ -16,6 +16,7 @@
 		9FEC51EA22390B6C00685CA2 /* cubeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC51E122390B6B00685CA2 /* cubeIcon.png */; };
 		9FEC51EB22390B6C00685CA2 /* Kg_weight 50p.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC51E222390B6B00685CA2 /* Kg_weight 50p.png */; };
 		9FEC51EC22390B6C00685CA2 /* speedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC51E322390B6B00685CA2 /* speedIcon.png */; };
+		9FEC51EE22390FFC00685CA2 /* Temp_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */; };
 		EE227B522237DC7100094700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B512237DC7100094700 /* AppDelegate.swift */; };
 		EE227B542237DC7100094700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B532237DC7100094700 /* ViewController.swift */; };
 		EE227B572237DC7100094700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE227B552237DC7100094700 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		9FEC51E122390B6B00685CA2 /* cubeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cubeIcon.png; sourceTree = SOURCE_ROOT; };
 		9FEC51E222390B6B00685CA2 /* Kg_weight 50p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kg_weight 50p.png"; sourceTree = SOURCE_ROOT; };
 		9FEC51E322390B6B00685CA2 /* speedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedIcon.png; sourceTree = SOURCE_ROOT; };
+		9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp_ViewController.swift; sourceTree = "<group>"; };
 		EE227B4E2237DC7100094700 /* MobileAppCWDennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppCWDennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE227B512237DC7100094700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE227B532237DC7100094700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				EE227B602237DC7A00094700 /* Info.plist */,
 				EE227B582237DC7100094700 /* MobileAppCWDennis.xcdatamodeld */,
 				EE227B7A2237E1F100094700 /* Weight_ViewController.swift */,
+				9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */,
 			);
 			path = MobileAppCWDennis;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				EE227B7B2237E1F100094700 /* Weight_ViewController.swift in Sources */,
 				EE227B5A2237DC7100094700 /* MobileAppCWDennis.xcdatamodeld in Sources */,
 				EE227B542237DC7100094700 /* ViewController.swift in Sources */,
+				9FEC51EE22390FFC00685CA2 /* Temp_ViewController.swift in Sources */,
 				EE227B522237DC7100094700 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

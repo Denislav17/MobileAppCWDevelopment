@@ -19,6 +19,7 @@
 		9FEC51EE22390FFC00685CA2 /* Temp_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */; };
 		9FEC51F0223926AC00685CA2 /* Speed_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */; };
 		9FEC51F42239314600685CA2 /* Length_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51F32239314600685CA2 /* Length_ViewController.swift */; };
+		9FEC51F622393E8D00685CA2 /* Volume_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */; };
 		EE227B522237DC7100094700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B512237DC7100094700 /* AppDelegate.swift */; };
 		EE227B542237DC7100094700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B532237DC7100094700 /* ViewController.swift */; };
 		EE227B572237DC7100094700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE227B552237DC7100094700 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp_ViewController.swift; sourceTree = "<group>"; };
 		9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed_ViewController.swift; sourceTree = "<group>"; };
 		9FEC51F32239314600685CA2 /* Length_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length_ViewController.swift; sourceTree = "<group>"; };
+		9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume_ViewController.swift; sourceTree = SOURCE_ROOT; };
 		EE227B4E2237DC7100094700 /* MobileAppCWDennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppCWDennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE227B512237DC7100094700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE227B532237DC7100094700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */,
 				9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */,
 				9FEC51F32239314600685CA2 /* Length_ViewController.swift */,
+				9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */,
 			);
 			path = MobileAppCWDennis;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				9FEC51EE22390FFC00685CA2 /* Temp_ViewController.swift in Sources */,
 				9FEC51F42239314600685CA2 /* Length_ViewController.swift in Sources */,
 				EE227B522237DC7100094700 /* AppDelegate.swift in Sources */,
+				9FEC51F622393E8D00685CA2 /* Volume_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

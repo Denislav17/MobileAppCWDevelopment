@@ -524,7 +524,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="woq-rD-RRJ"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="6hE-Kq-5JJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-PD-DCi">
@@ -534,7 +534,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="il5-Sn-5ir"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="thU-rE-cQC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky1-nI-6pk">
@@ -544,7 +544,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="M67-Dg-fW9"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="qdP-LU-8jr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5H-lw-Eah">
@@ -554,7 +554,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="9zS-Nh-43l"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="9kQ-lP-Cle"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-3J-twK">
@@ -564,7 +564,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="eKK-yg-HQo"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="hj7-mw-lLw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-gr-CZC">
@@ -574,7 +574,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="f08-Kg-f62"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="mZJ-1O-lZv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aK-ks-LEL">
@@ -584,7 +584,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="OXD-Ll-1r3"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="0Wb-GX-bYr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqd-Wj-ojl">
@@ -594,7 +594,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="HVa-6M-fI4"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="7aS-aL-Nnp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QH3-cs-0y2">
@@ -604,7 +604,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="lyR-6t-wdd"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="T8Z-Od-QOT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-Er-gTk">
@@ -614,7 +614,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="Yq3-Un-KwT"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="zJz-UM-qMI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-70-PyC">
@@ -624,7 +624,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="fgM-Sx-Gw2"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="ZCz-fw-ol2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHn-V0-Pw0">
@@ -634,7 +634,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="5Fb-C7-Nab"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="XMZ-ug-e0h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-6a-aNb">
@@ -644,7 +644,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyboardButton_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="XOy-9b-OST"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="kpC-To-0EI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djz-U3-d9q">
@@ -655,7 +655,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnClear_Tapped:" destination="nJe-Sh-Ctb" eventType="touchUpInside" id="S8i-PD-9Nw"/>
+                                            <action selector="keyboardButton_Tapped:" destination="Ear-u4-vyI" eventType="touchUpInside" id="QpE-Nk-1gz"/>
                                         </connections>
                                     </button>
                                 </subviews>

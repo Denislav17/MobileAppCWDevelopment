@@ -505,6 +505,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtMetres_Selected:" destination="2rh-T1-3Lk" eventType="touchDown" id="YmG-db-ni6"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="km/h" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ofg-Uz-Jqh">
                                         <rect key="frame" x="148" y="78" width="187" height="30"/>
@@ -512,6 +515,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtKm_Selected:" destination="2rh-T1-3Lk" eventType="touchDown" id="b0U-bV-63h"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="miles/h" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-Un-WMP">
                                         <rect key="frame" x="148" y="119" width="187" height="30"/>
@@ -519,6 +525,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtMiles_Selected:" destination="2rh-T1-3Lk" eventType="touchDown" id="nnt-7u-fPi"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nautical miles/h" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-8d-mot">
                                         <rect key="frame" x="148" y="158" width="187" height="30"/>
@@ -526,19 +535,208 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtNautical_Selected:" destination="2rh-T1-3Lk" eventType="touchDown" id="YfO-cB-ISG"/>
+                                        </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osd-Nt-UO5">
+                                        <rect key="frame" x="0.0" y="190" width="343" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.020619694300000001" blue="0.053159216549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-fT-u2G">
+                                <rect key="frame" x="16" y="520" width="343" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQW-A7-0Ql">
+                                        <rect key="frame" x="16" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="Kd8-5Z-qUE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXa-km-SyB">
+                                        <rect key="frame" x="51" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="WEo-1W-A71"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwS-g0-ate">
+                                        <rect key="frame" x="87" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="vVZ-U2-FHw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAI-fd-YSl">
+                                        <rect key="frame" x="299" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="lAV-uM-07H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYX-Yn-NqR">
+                                        <rect key="frame" x="123" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="k65-Ht-ub1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4J-5h-EBm">
+                                        <rect key="frame" x="158" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="IKB-a6-HKT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daL-vA-GxR">
+                                        <rect key="frame" x="194" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="dtg-rh-Dbx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaD-a8-6QU">
+                                        <rect key="frame" x="229" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="OK1-dJ-9LQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQH-mP-MhE">
+                                        <rect key="frame" x="264" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="wjw-Lo-yWA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1K-cK-tnG">
+                                        <rect key="frame" x="103" y="39" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="gZz-6S-GEJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-MZ-VGy">
+                                        <rect key="frame" x="211" y="39" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="DEL">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="peS-nC-UdE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie0-Hb-JAb">
+                                        <rect key="frame" x="139" y="39" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="FXN-Fb-IDp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-uL-snl">
+                                        <rect key="frame" x="175" y="39" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="ALG-p9-ecm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-3P-rnc">
+                                        <rect key="frame" x="248" y="39" width="47" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.35114373459999998" green="0.3425543097" blue="0.69830663069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="CLEAR">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyboardButton_Tapped:" destination="2rh-T1-3Lk" eventType="touchUpInside" id="4Pi-kw-ygA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dAI-fd-YSl" firstAttribute="leading" secondItem="uQH-mP-MhE" secondAttribute="trailing" constant="5" id="0Nv-gP-3wH"/>
+                                    <constraint firstItem="E1K-cK-tnG" firstAttribute="top" secondItem="dwS-g0-ate" secondAttribute="bottom" constant="1" id="1pb-U5-Z0k"/>
+                                    <constraint firstItem="DaD-a8-6QU" firstAttribute="baseline" secondItem="uQH-mP-MhE" secondAttribute="baseline" id="91f-4E-jg0"/>
+                                    <constraint firstItem="f3I-MZ-VGy" firstAttribute="leading" secondItem="7Mo-uL-snl" secondAttribute="trailing" constant="6" id="AdW-nf-zDK"/>
+                                    <constraint firstItem="WYX-Yn-NqR" firstAttribute="baseline" secondItem="O4J-5h-EBm" secondAttribute="baseline" id="Aqw-1j-V8g"/>
+                                    <constraint firstItem="O4J-5h-EBm" firstAttribute="leading" secondItem="WYX-Yn-NqR" secondAttribute="trailing" constant="5" id="Bhp-be-4Hf"/>
+                                    <constraint firstItem="LQW-A7-0Ql" firstAttribute="top" secondItem="x8F-fT-u2G" secondAttribute="topMargin" id="Bqh-N0-3wE"/>
+                                    <constraint firstItem="E1K-cK-tnG" firstAttribute="baseline" secondItem="Ie0-Hb-JAb" secondAttribute="baseline" id="C1o-j6-DhM"/>
+                                    <constraint firstItem="LQW-A7-0Ql" firstAttribute="leading" secondItem="x8F-fT-u2G" secondAttribute="leading" constant="16" id="E54-xg-Ys0"/>
+                                    <constraint firstItem="daL-vA-GxR" firstAttribute="baseline" secondItem="DaD-a8-6QU" secondAttribute="baseline" id="Ge5-lG-5Dj"/>
+                                    <constraint firstItem="WYX-Yn-NqR" firstAttribute="leading" secondItem="dwS-g0-ate" secondAttribute="trailing" constant="6" id="LHI-fV-7rb"/>
+                                    <constraint firstItem="dwS-g0-ate" firstAttribute="leading" secondItem="PXa-km-SyB" secondAttribute="trailing" constant="6" id="Q0E-BY-Rk2"/>
+                                    <constraint firstItem="O4J-5h-EBm" firstAttribute="baseline" secondItem="daL-vA-GxR" secondAttribute="baseline" id="QUr-e7-DiK"/>
+                                    <constraint firstItem="LQW-A7-0Ql" firstAttribute="baseline" secondItem="PXa-km-SyB" secondAttribute="baseline" id="Qbh-8y-8c5"/>
+                                    <constraint firstItem="Ie0-Hb-JAb" firstAttribute="leading" secondItem="E1K-cK-tnG" secondAttribute="trailing" constant="6" id="Roq-LA-UFN"/>
+                                    <constraint firstItem="uQH-mP-MhE" firstAttribute="leading" secondItem="DaD-a8-6QU" secondAttribute="trailing" constant="5" id="ZP9-wN-tBp"/>
+                                    <constraint firstItem="PXa-km-SyB" firstAttribute="baseline" secondItem="dwS-g0-ate" secondAttribute="baseline" id="an0-u1-TXC"/>
+                                    <constraint firstItem="dwS-g0-ate" firstAttribute="baseline" secondItem="WYX-Yn-NqR" secondAttribute="baseline" id="beS-EK-eA7"/>
+                                    <constraint firstItem="7Mo-uL-snl" firstAttribute="leading" secondItem="Ie0-Hb-JAb" secondAttribute="trailing" constant="6" id="eXw-eS-Dog"/>
+                                    <constraint firstItem="daL-vA-GxR" firstAttribute="leading" secondItem="O4J-5h-EBm" secondAttribute="trailing" constant="6" id="ekq-FF-8g7"/>
+                                    <constraint firstItem="E1K-cK-tnG" firstAttribute="leading" secondItem="x8F-fT-u2G" secondAttribute="leading" constant="103" id="g5S-bc-atS"/>
+                                    <constraint firstItem="DaD-a8-6QU" firstAttribute="leading" secondItem="daL-vA-GxR" secondAttribute="trailing" constant="5" id="haW-Pf-zeP"/>
+                                    <constraint firstItem="7Mo-uL-snl" firstAttribute="baseline" secondItem="f3I-MZ-VGy" secondAttribute="baseline" id="iVf-09-dgb"/>
+                                    <constraint firstItem="PXa-km-SyB" firstAttribute="leading" secondItem="LQW-A7-0Ql" secondAttribute="trailing" constant="5" id="kaM-rp-NFs"/>
+                                    <constraint firstItem="uQH-mP-MhE" firstAttribute="baseline" secondItem="dAI-fd-YSl" secondAttribute="baseline" id="pac-D0-QQ1"/>
+                                    <constraint firstItem="Ie0-Hb-JAb" firstAttribute="baseline" secondItem="7Mo-uL-snl" secondAttribute="baseline" id="qx2-hs-cZ3"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="x8F-fT-u2G" firstAttribute="top" secondItem="Lv0-aK-BcZ" secondAttribute="bottom" constant="39" id="1dR-lQ-3Ii"/>
                             <constraint firstItem="Lv0-aK-BcZ" firstAttribute="leading" secondItem="VA5-K1-heB" secondAttribute="leadingMargin" id="6kV-QJ-Xwc"/>
                             <constraint firstItem="Lv0-aK-BcZ" firstAttribute="leading" secondItem="elh-Fr-Zvm" secondAttribute="leading" id="CpX-3T-Dc1"/>
+                            <constraint firstItem="x8F-fT-u2G" firstAttribute="trailing" secondItem="Lv0-aK-BcZ" secondAttribute="trailing" id="FHD-mv-9er"/>
                             <constraint firstItem="elh-Fr-Zvm" firstAttribute="top" secondItem="whq-Li-6ux" secondAttribute="bottom" id="Fh0-wE-tWc"/>
                             <constraint firstItem="whq-Li-6ux" firstAttribute="leading" secondItem="R7g-Uh-zBO" secondAttribute="leading" constant="5" id="H2H-Z6-69U"/>
                             <constraint firstItem="Lv0-aK-BcZ" firstAttribute="top" secondItem="whq-Li-6ux" secondAttribute="bottom" constant="65" id="HqY-Yx-4jt"/>
                             <constraint firstItem="R7g-Uh-zBO" firstAttribute="bottom" secondItem="elh-Fr-Zvm" secondAttribute="bottom" constant="509" id="Jj0-O7-cKb"/>
                             <constraint firstItem="whq-Li-6ux" firstAttribute="centerX" secondItem="VA5-K1-heB" secondAttribute="centerX" id="Jzv-2Z-xvQ"/>
+                            <constraint firstItem="x8F-fT-u2G" firstAttribute="leading" secondItem="Lv0-aK-BcZ" secondAttribute="leading" id="OTf-t1-RuO"/>
+                            <constraint firstItem="R7g-Uh-zBO" firstAttribute="bottom" secondItem="x8F-fT-u2G" secondAttribute="bottom" constant="58" id="cT1-ek-f8V"/>
                             <constraint firstItem="whq-Li-6ux" firstAttribute="top" secondItem="R7g-Uh-zBO" secondAttribute="top" constant="13" id="fev-mB-1je"/>
                             <constraint firstItem="Lv0-aK-BcZ" firstAttribute="centerX" secondItem="whq-Li-6ux" secondAttribute="centerX" id="fze-NM-ROz"/>
                             <constraint firstItem="Lv0-aK-BcZ" firstAttribute="trailing" secondItem="elh-Fr-Zvm" secondAttribute="trailing" id="hxi-C1-TxI"/>
@@ -547,6 +745,8 @@
                         <viewLayoutGuide key="safeArea" id="R7g-Uh-zBO"/>
                     </view>
                     <connections>
+                        <outlet property="Keyboard" destination="x8F-fT-u2G" id="jzq-cd-FtP"/>
+                        <outlet property="lblError" destination="osd-Nt-UO5" id="pV9-i5-ESN"/>
                         <outlet property="txtKm" destination="ofg-Uz-Jqh" id="f7k-el-flk"/>
                         <outlet property="txtMetres" destination="LPH-Ri-mMA" id="7Ti-ap-TBQ"/>
                         <outlet property="txtMiles" destination="nZH-Un-WMP" id="FZO-yp-Hyn"/>
@@ -556,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zev-en-n11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="734"/>
+            <point key="canvasLocation" x="1781.5999999999999" y="732.68365817091455"/>
         </scene>
         <!--Temp View Controller-->
         <scene sceneID="ab7-dr-EpM">

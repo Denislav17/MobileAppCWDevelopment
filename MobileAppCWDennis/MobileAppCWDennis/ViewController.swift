@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnWeight: UIBarButtonItem!
     @IBOutlet weak var btnTemp: UIBarButtonItem!
     @IBOutlet weak var btnSpeed: UIBarButtonItem!
+    @IBOutlet weak var btnLength: UIBarButtonItem!
     
     
     
@@ -35,6 +36,9 @@ class ViewController: UIViewController {
     }
     @IBAction func btnSpeed_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_SpeedPage", sender: self)
+    }
+    @IBAction func btnLength_Clicked(_ sender: Any) {
+        performSegue(withIdentifier: "Id_LengthPage", sender: self)
     }
     
     

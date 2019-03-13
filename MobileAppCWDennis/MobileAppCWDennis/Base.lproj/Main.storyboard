@@ -36,6 +36,11 @@
                                             <action selector="btnSpeed_Clicked:" destination="BYZ-38-t0r" id="vIO-SF-hil"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Item" image="distance icon 50p.png" id="45E-o0-4IJ">
+                                        <connections>
+                                            <action selector="btnLength_Clicked:" destination="BYZ-38-t0r" id="wJ6-eK-UPg"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -50,17 +55,62 @@
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnLength" destination="45E-o0-4IJ" id="n53-7b-2U9"/>
                         <outlet property="btnSpeed" destination="HQu-3D-0lU" id="kFj-g9-gAW"/>
                         <outlet property="btnTemp" destination="XKa-L2-eCz" id="DUX-25-jpt"/>
                         <outlet property="btnWeight" destination="3E7-hf-wIV" id="uvu-8x-mG2"/>
                         <segue destination="nJe-Sh-Ctb" kind="presentation" identifier="Id_WeightPage" id="L6Q-WV-kEj"/>
                         <segue destination="Ear-u4-vyI" kind="presentation" identifier="Id_TempPage" id="7A4-ws-zJk"/>
                         <segue destination="2rh-T1-3Lk" kind="presentation" identifier="Id_SpeedPage" id="vpm-Df-lzI"/>
+                        <segue destination="FMN-Kd-BNj" kind="presentation" identifier="Id_LengthPage" id="wUm-cI-lr7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--Length View Controller-->
+        <scene sceneID="XJI-Kn-T4e">
+            <objects>
+                <viewController id="FMN-Kd-BNj" customClass="Length_ViewController" customModule="MobileAppCWDennis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4O-px-rnm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-0x-YKH">
+                                <rect key="frame" x="5" y="33" width="365" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem id="ZXw-nO-fzl">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="XzJ-dn-60n">
+                                            <connections>
+                                                <action selector="btnBack_Touched:" destination="FMN-Kd-BNj" id="1at-W7-I7m"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Item" image="saveIocn.png" id="S8J-be-0OA"/>
+                                            <barButtonItem title="Item" image="history-512.png" id="bL0-1V-lCH"/>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dSf-0x-YKH" firstAttribute="leading" secondItem="fwa-tH-kmS" secondAttribute="leading" constant="5" id="1mm-dN-70i"/>
+                            <constraint firstItem="dSf-0x-YKH" firstAttribute="centerX" secondItem="d4O-px-rnm" secondAttribute="centerX" id="PLJ-MT-Ats"/>
+                            <constraint firstItem="dSf-0x-YKH" firstAttribute="top" secondItem="fwa-tH-kmS" secondAttribute="top" constant="13" id="ti2-zC-oWy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fwa-tH-kmS"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="Id4_HomePage" id="LAa-2h-ehl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb5-Yg-sBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="29"/>
         </scene>
         <!--Weight View Controller-->
         <scene sceneID="bF9-TJ-s4j">
@@ -756,7 +806,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zev-en-n11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781.5999999999999" y="732.68365817091455"/>
+            <point key="canvasLocation" x="1814" y="985"/>
         </scene>
         <!--Temp View Controller-->
         <scene sceneID="ab7-dr-EpM">
@@ -1072,12 +1122,13 @@
     </scenes>
     <resources>
         <image name="Kg_weight 50p.png" width="50" height="50"/>
+        <image name="distance icon 50p.png" width="50" height="50"/>
         <image name="history-512.png" width="25" height="25"/>
         <image name="saveIocn.png" width="25" height="25"/>
         <image name="speedIcon.png" width="50" height="50"/>
         <image name="temperature 50p.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QWJ-2g-e1L"/>
+        <segue reference="LAa-2h-ehl"/>
     </inferredMetricsTieBreakers>
 </document>

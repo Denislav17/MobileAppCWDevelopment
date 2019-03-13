@@ -512,6 +512,13 @@
                                             <action selector="txtKelvin_Selected:" destination="Ear-u4-vyI" eventType="touchDown" id="zbQ-9f-KjQ"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XAXAX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKL-gZ-lsj">
+                                        <rect key="frame" x="202" y="161" width="56" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.020619694300595626" blue="0.053159216545906607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-RJ-ZHp">
@@ -712,6 +719,7 @@
                     </view>
                     <connections>
                         <outlet property="Keyboard" destination="tc7-RJ-ZHp" id="aDU-ux-pxy"/>
+                        <outlet property="lblError" destination="hKL-gZ-lsj" id="LIa-RV-OzI"/>
                         <outlet property="txtCelsius" destination="IgX-L0-GCb" id="ple-Bd-A56"/>
                         <outlet property="txtFahrenheit" destination="6jY-xN-iel" id="ykw-PS-Zyv"/>
                         <outlet property="txtKelvin" destination="gKg-Ec-ZJ3" id="n4W-3g-quj"/>

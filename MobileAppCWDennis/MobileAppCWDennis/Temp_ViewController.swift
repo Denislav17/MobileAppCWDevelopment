@@ -19,6 +19,7 @@ class Temp_ViewController: UIViewController {
     @IBOutlet weak var txtCelsius: UITextField!
     @IBOutlet weak var txtFahrenheit: UITextField!
     @IBOutlet weak var txtKelvin: UITextField!
+    @IBOutlet weak var lblError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -409,61 +410,73 @@ class Temp_ViewController: UIViewController {
         case ".":
             // .
             if(txtCelsius.isSelected)
-            { if(txtCelsius.text?.contains("."))!
+            { if((txtCelsius.text?.contains("."))! || (txtCelsius.text?.isEmpty)!)
             {
-                //lblError.text = "Sorry, you can't add '.' twice!"
+                lblError.text = "Sorry, you can't add this now!"
             } else {
                 txtCelsius.text = txtCelsius.text! + "."
                 CelsiusSelected(Double(txtCelsius.text!)!)
                 }
             }
             if(txtFahrenheit.isSelected)
-            { if(txtFahrenheit.text?.contains("."))!
+            { if((txtFahrenheit.text?.contains("."))! || (txtCelsius.text?.isEmpty)!)
             {
-                //lblError.text = "Sorry, you can't add '.' twice!"
+                lblError.text = "Sorry, you can't add this now!"
             } else {
                 txtFahrenheit.text = txtFahrenheit.text! + "."
                 FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 }
             }
             if(txtKelvin.isSelected)
-            { if(txtKelvin.text?.contains("."))!
+            { if((txtKelvin.text?.contains("."))! || (txtCelsius.text?.isEmpty)!)
             {
-                //lblError.text = "Sorry, you can't add '.' twice!"
+                lblError.text = "Sorry, you can't add this now!"
             } else {
                 txtKelvin.text = txtKelvin.text! + "."
                 KelvinSelected(Double(txtKelvin.text!)!)
                 }
             }
         //
-        case "-": break
-            
+        case "-":
+            if(txtCelsius.isSelected)
+            {
+                txtCelsius.text = "-"
+            }; if(txtFahrenheit.isSelected)
+            {
+                txtFahrenheit.text = "-"
+            }; if(txtKelvin.isSelected)
+            {
+                txtKelvin.text = "-"
+            }
         case "DEL":
             // DEL
             if(txtCelsius.isSelected)
             {
                 txtCelsius.text = String((txtCelsius.text?.dropLast())!)
-                if(txtCelsius.text == "")
+                if(txtCelsius.text == "" || txtCelsius.text == "-")
                 {
                     txtCelsius.text = "0"
                 }
+                lblError.text = ""
                 CelsiusSelected(Double(txtCelsius.text!)!)
             }
             
             if (txtFahrenheit.isSelected) {
                 txtFahrenheit.text = String((txtFahrenheit.text?.dropLast())!)
-                if(txtFahrenheit.text == "")
+                if(txtFahrenheit.text == "" || txtFahrenheit.text == "-")
                 {
                     txtFahrenheit.text = "0"
                 }
+                lblError.text = ""
                 FahrenheitSelected(Double(txtFahrenheit.text!)!)
             }
             if (txtKelvin.isSelected){
                 txtKelvin.text = String((txtKelvin.text?.dropLast())!)
-                if(txtKelvin.text == "")
+                if(txtKelvin.text == "" || txtKelvin.text == "-")
                 {
                     txtKelvin.text = "0"
                 }
+                lblError.text = ""	
                 KelvinSelected(Double(txtKelvin.text!)!)
             }
             //

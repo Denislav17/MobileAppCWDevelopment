@@ -66,6 +66,13 @@ class Weight_ViewController: UIViewController {
         
         txtPounds.backgroundColor = UIColor.white
         txtPounds.textColor = UIColor.black
+        
+        txtKg.text = ""
+        txtGrams.text = "0"
+        txtOunces.text = "0"
+        txtPounds.text = "0"
+        txtStone.text = "0"
+        txtPound.text = "0"
     }
     
     @IBAction func txtGrams_Selected(_ sender: UITextField) {
@@ -86,6 +93,13 @@ class Weight_ViewController: UIViewController {
         
         txtPounds.backgroundColor = UIColor.white
         txtPounds.textColor = UIColor.black
+        
+        txtKg.text = "0"
+        txtGrams.text = ""
+        txtOunces.text = "0"
+        txtPounds.text = "0"
+        txtStone.text = "0"
+        txtPound.text = "0"
     }
     
     @IBAction func txtOunces_Selected(_ sender: UITextField) {
@@ -106,6 +120,13 @@ class Weight_ViewController: UIViewController {
         
         txtPounds.backgroundColor = UIColor.white
         txtPounds.textColor = UIColor.black
+        
+        txtKg.text = "0"
+        txtGrams.text = "0"
+        txtOunces.text = ""
+        txtPounds.text = "0"
+        txtStone.text = "0"
+        txtPound.text = "0"
     }
     
     @IBAction func txtPounds_Selected(_ sender: UITextField) {
@@ -126,6 +147,13 @@ class Weight_ViewController: UIViewController {
         
         txtOunces.backgroundColor = UIColor.white
         txtOunces.textColor = UIColor.black
+        
+        txtKg.text = "0"
+        txtGrams.text = "0"
+        txtOunces.text = "0"
+        txtPounds.text = ""
+        txtStone.text = "0"
+        txtPound.text = "0"
     }
     //Text Fields Selection
     

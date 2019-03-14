@@ -21,6 +21,9 @@ class Temp_ViewController: UIViewController {
     @IBOutlet weak var txtKelvin: UITextField!
     @IBOutlet weak var lblError: UILabel!
     
+    
+    private var _tempHistoryArray: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,8 +32,9 @@ class Temp_ViewController: UIViewController {
         txtCelsius.isSelected = false
         txtFahrenheit.isSelected = false
         txtKelvin.isSelected = false
-
-        // Do any additional setup after loading the view.
+        
+        _tempHistoryArray = (UserDefaults.standard.array(forKey: "th") as? [String])!
+        
     }
     @IBAction func txtCelsius_Selected(_ sender: Any) {
         txtCelsius.isSelected = true
@@ -493,13 +497,27 @@ class Temp_ViewController: UIViewController {
         }
     }
     //End of Keyboard init
-    
-    
-    
-    
+
     //Extra buttons init
+    @IBAction func btnSave_Touched(_ sender: Any) {
+        
+        let celsius = txtCelsius.text!
+        let fahr = txtFahrenheit.text!
+        let kelvin = txtKelvin.text!
+        
+        let stringConcat: String
+        stringConcat = "Celsius: " + celsius + "\n"
+            + "Fahrenheit: " + fahr + "\n"
+            + "Kelvin: " + kelvin + "\n"
+            + "\n" + "-----------"
+        _tempHistoryArray.append(stringConcat)
+        UserDefaults.standard.set(_tempHistoryArray, forKey: "th")
+    }
     @IBAction func btnBack_Touched(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id2_HomePage", sender: self)
+    }
+    @IBAction func btnHistory_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id_TempHistory", sender: self)
     }
     
 

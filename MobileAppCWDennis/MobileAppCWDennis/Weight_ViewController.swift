@@ -745,7 +745,7 @@ class Weight_ViewController: UIViewController {
             + "ounce: " + String(ounce!) + "\n"
             + "pounds: " + String(pounds!) + "\n"
             + "stone-pounds: " + String(stone!) + String(pound!)
-            + "\n" 
+            + "\n" + "-----------"
         _weightHistoryArray.append(stringConcat)
         UserDefaults.standard.set(_weightHistoryArray, forKey: "wh")
     }

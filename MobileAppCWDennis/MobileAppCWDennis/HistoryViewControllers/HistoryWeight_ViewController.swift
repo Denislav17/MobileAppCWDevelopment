@@ -24,11 +24,9 @@ class HistoryWeight_ViewController: UIViewController {
 
         weightHistoryArray.reverse()
 
-        for stringItem in weightHistoryArray {
+        for stringItem in weightHistoryArray.prefix(5) {
             txtViewTest.text = txtViewTest.text + stringItem + "\n"
-        }
-        
-       
+        }              
     }
     @IBAction func btnBack_Touched(_ sender: Any) {
         performSegue(withIdentifier: "OpenWeightPage", sender: self)

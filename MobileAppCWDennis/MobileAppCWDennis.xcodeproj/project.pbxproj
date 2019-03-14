@@ -20,6 +20,8 @@
 		9FEC51F0223926AC00685CA2 /* Speed_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */; };
 		9FEC51F42239314600685CA2 /* Length_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51F32239314600685CA2 /* Length_ViewController.swift */; };
 		9FEC51F622393E8D00685CA2 /* Volume_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */; };
+		9FEC51F822394BAC00685CA2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC51F722394BAC00685CA2 /* logo.png */; };
+		9FEC5218223B01D400685CA2 /* HistoryWeight_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5217223B01D400685CA2 /* HistoryWeight_ViewController.swift */; };
 		EE227B522237DC7100094700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B512237DC7100094700 /* AppDelegate.swift */; };
 		EE227B542237DC7100094700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B532237DC7100094700 /* ViewController.swift */; };
 		EE227B572237DC7100094700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE227B552237DC7100094700 /* Main.storyboard */; };
@@ -43,7 +45,9 @@
 		9FEC51ED22390FFC00685CA2 /* Temp_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp_ViewController.swift; sourceTree = "<group>"; };
 		9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed_ViewController.swift; sourceTree = "<group>"; };
 		9FEC51F32239314600685CA2 /* Length_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length_ViewController.swift; sourceTree = "<group>"; };
-		9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume_ViewController.swift; sourceTree = SOURCE_ROOT; };
+		9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Volume_ViewController.swift; path = MobileAppCWDennis/Volume_ViewController.swift; sourceTree = SOURCE_ROOT; };
+		9FEC51F722394BAC00685CA2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
+		9FEC5217223B01D400685CA2 /* HistoryWeight_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWeight_ViewController.swift; sourceTree = "<group>"; };
 		EE227B4E2237DC7100094700 /* MobileAppCWDennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppCWDennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE227B512237DC7100094700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE227B532237DC7100094700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		9FEC51DA22390B4900685CA2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				9FEC51F722394BAC00685CA2 /* logo.png */,
 				9FEC51DC22390B6B00685CA2 /* convert.png */,
 				9FEC51E122390B6B00685CA2 /* cubeIcon.png */,
 				9FEC51DB22390B6B00685CA2 /* distance icon 50p.png */,
@@ -81,6 +86,21 @@
 				9FEC51DD22390B6B00685CA2 /* temperature 50p.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		9FEC51F922395A2A00685CA2 /* Database Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Database Connection";
+			sourceTree = "<group>";
+		};
+		9FEC5212223ADC7200685CA2 /* HistoryViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FEC5217223B01D400685CA2 /* HistoryWeight_ViewController.swift */,
+			);
+			path = HistoryViewControllers;
 			sourceTree = "<group>";
 		};
 		EE227B452237DC7100094700 = {
@@ -102,6 +122,8 @@
 		EE227B502237DC7100094700 /* MobileAppCWDennis */ = {
 			isa = PBXGroup;
 			children = (
+				9FEC5212223ADC7200685CA2 /* HistoryViewControllers */,
+				9FEC51F922395A2A00685CA2 /* Database Connection */,
 				9FEC51DA22390B4900685CA2 /* Icons */,
 				EE227BA022382FC400094700 /* Objects */,
 				EE227B512237DC7100094700 /* AppDelegate.swift */,
@@ -160,6 +182,7 @@
 				TargetAttributes = {
 					EE227B4D2237DC7100094700 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -186,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEC51F822394BAC00685CA2 /* logo.png in Resources */,
 				9FEC51E522390B6C00685CA2 /* convert.png in Resources */,
 				9FEC51E822390B6C00685CA2 /* history-512.png in Resources */,
 				9FEC51EB22390B6C00685CA2 /* Kg_weight 50p.png in Resources */,
@@ -211,6 +235,7 @@
 				EE227BA222382FEE00094700 /* Weight.swift in Sources */,
 				EE227B7B2237E1F100094700 /* Weight_ViewController.swift in Sources */,
 				EE227B5A2237DC7100094700 /* MobileAppCWDennis.xcdatamodeld in Sources */,
+				9FEC5218223B01D400685CA2 /* HistoryWeight_ViewController.swift in Sources */,
 				9FEC51F0223926AC00685CA2 /* Speed_ViewController.swift in Sources */,
 				EE227B542237DC7100094700 /* ViewController.swift in Sources */,
 				9FEC51EE22390FFC00685CA2 /* Temp_ViewController.swift in Sources */,
@@ -359,7 +384,7 @@
 		EE227B642237DC7A00094700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileAppCWDennis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -368,6 +393,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DR.MobileAppCWDennis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,7 +403,7 @@
 		EE227B652237DC7A00094700 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileAppCWDennis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,6 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DR.MobileAppCWDennis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

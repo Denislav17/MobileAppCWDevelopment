@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Length_ViewController: UIViewController {
+class Length_ViewController: UIViewController, UITextFieldDelegate{
     
     
     //Textboxes init
@@ -33,9 +33,13 @@ class Length_ViewController: UIViewController {
         txtInch.isSelected = false
         
         Keyboard.isHidden = true
+        
+        
+        
     }
     //Selection section
     @IBAction func txtMetre_Selected(_ sender: Any) {
+        txtMetre.resignFirstResponder()
         txtMetre.isSelected = true
         txtMetre.backgroundColor = UIColor.lightGray
         txtMetre.textColor = UIColor.white
@@ -65,6 +69,7 @@ class Length_ViewController: UIViewController {
         txtMm.text = "0"
         txtYard.text = "0"
         txtInch.text = "0"
+        
     }
     @IBAction func txtMile_Selected(_ sender: Any) {
         txtMile.isSelected = true

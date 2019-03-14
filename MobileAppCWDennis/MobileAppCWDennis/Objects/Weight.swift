@@ -16,14 +16,16 @@ public class Weight {
     var _pounds: Double
     var _stone: Double
     var _pound: Double
+    private let defaults = UserDefaults.standard
     
-    init(kg:Double,gr:Double,ounc:Double,pounds:Double,stone:Double,pound:Double){
-        _kilograms = kg
-        _grams = gr
-        _ounces = ounc
-        _pounds = pounds
-        _stone = stone
-        _pound = pound
+    init(_ kg:Double,_ gr:Double,_ ounces:Double,_ pounds:Double,_ stone:Double,_ pound:Double) {
+        
+         _kilograms = kg
+         _grams =  gr
+         _ounces = ounces
+         _pounds = pounds
+         _stone = stone
+         _pound = pound
     }
     
     //Setters
@@ -66,5 +68,4 @@ public class Weight {
         return _pound
     }
     //End Getters
-    
 }

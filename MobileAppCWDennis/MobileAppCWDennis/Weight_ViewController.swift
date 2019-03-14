@@ -13,8 +13,7 @@ class Weight_ViewController: UIViewController {
     @IBOutlet weak var btnBack: UIBarButtonItem!
     @IBOutlet weak var Keyboard: UIView!
     @IBOutlet weak var lblWelcome: UILabel!
-    @IBOutlet weak var lblError: UILabel!
-    
+    @IBOutlet weak var lblError: UILabel!    
     //text boxes
     @IBOutlet weak var txtKg: UITextField!
     @IBOutlet weak var txtGrams: UITextField!
@@ -24,6 +23,7 @@ class Weight_ViewController: UIViewController {
     @IBOutlet weak var txtPound: UITextField!
     //end of text boxes
     //Keyboard explicit outlets
+    private var _weightHistoryArray: [String] = []
     @IBOutlet weak var KeyboardButtonMinus: UIButton!
     //end of keyboard explicit outlets
     override func viewDidLoad() {
@@ -38,7 +38,11 @@ class Weight_ViewController: UIViewController {
         txtStone.isSelected = false
         txtPound.isSelected = false
 
-        // Do any additional setup after loading the view.
+        do {
+            _weightHistoryArray = UserDefaults.standard.array(forKey: "wh") as! [String]
+        } catch {
+           print("no such array")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -704,7 +708,6 @@ class Weight_ViewController: UIViewController {
             break;
         }
     }
-    
     @IBAction func btnClear_Tapped(_ sender: UIButton) {
         
         Keyboard.isHidden = true
@@ -721,11 +724,33 @@ class Weight_ViewController: UIViewController {
         txtGrams.isSelected = false
         txtOunces.isSelected = false
         txtPounds.isSelected = false
-        
-        
-
     }
     
     //End of Keyboard Func
+        //Extra buttons
+    @IBAction func btnSave_Touched(_ sender: Any) {
+        //saving txt fields data into variables
+        let kg = Double(txtKg.text!)
+        let gr = Double(txtGrams.text!)
+        let ounce = Double(txtOunces.text!)
+        let pounds = Double(txtPounds.text!)
+        let stone = Double(txtStone.text!)
+        let pound = Double(txtPound.text!)
+        
+        
+
+        let stringConcat: String
+        stringConcat = "kg: " + String(kg!) + "\n"
+            + "gr: " + String(gr!) + "\n"
+            + "ounce: " + String(ounce!) + "\n"
+            + "pounds: " + String(pounds!) + "\n"
+            + "stone-pounds: " + String(stone!) + String(pound!)
+            + "\n" 
+        _weightHistoryArray.append(stringConcat)
+        UserDefaults.standard.set(_weightHistoryArray, forKey: "wh")
+    }
+    @IBAction func btnHistoryPage_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id_WeightHistory", sender: self)
+    }
     
 }

@@ -65,11 +65,11 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtInch.textColor = UIColor.black
         //Text
         txtMetre.text = ""
-        txtMile.text = "0"
-        txtCm.text = "0"
-        txtMm.text = "0"
-        txtYard.text = "0"
-        txtInch.text = "0"
+        txtMile.text = "0.000"
+        txtCm.text = "0.000"
+        txtMm.text = "0.000"
+        txtYard.text = "0.000"
+        txtInch.text = "0.000"
         
     }
     @IBAction func txtMile_Selected(_ sender: Any) {
@@ -96,12 +96,12 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtYard.textColor = UIColor.black
         txtInch.textColor = UIColor.black
         //Text
-        txtMetre.text = "0"
+        txtMetre.text = "0.000"
         txtMile.text = ""
-        txtCm.text = "0"
-        txtMm.text = "0"
-        txtYard.text = "0"
-        txtInch.text = "0"
+        txtCm.text = "0.000"
+        txtMm.text = "0.000"
+        txtYard.text = "0.000"
+        txtInch.text = "0.000"
     }
     @IBAction func txtCm_Selected(_ sender: Any) {
         txtCm.isSelected = true
@@ -127,12 +127,12 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtYard.textColor = UIColor.black
         txtInch.textColor = UIColor.black
         //Text
-        txtMetre.text = "0"
-        txtMile.text = "0"
+        txtMetre.text = "0.000"
+        txtMile.text = "0.000"
         txtCm.text = ""
-        txtMm.text = "0"
-        txtYard.text = "0"
-        txtInch.text = "0"
+        txtMm.text = "0.000"
+        txtYard.text = "0.000"
+        txtInch.text = "0.000"
     }
     @IBAction func txtMm_Selected(_ sender: Any) {
         txtMm.isSelected = true
@@ -158,12 +158,12 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtYard.textColor = UIColor.black
         txtInch.textColor = UIColor.black
         //Text
-        txtMetre.text = "0"
-        txtMile.text = "0"
-        txtCm.text = "0"
+        txtMetre.text = "0.000"
+        txtMile.text = "0.000"
+        txtCm.text = "0.000"
         txtMm.text = ""
-        txtYard.text = "0"
-        txtInch.text = "0"
+        txtYard.text = "0.000"
+        txtInch.text = "0.000"
     }
     @IBAction func txtYard_Selected(_ sender: Any) {
         txtYard.isSelected = true
@@ -190,12 +190,12 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtMm.textColor = UIColor.black
         txtInch.textColor = UIColor.black
         //Text
-        txtMetre.text = "0"
-        txtMile.text = "0"
-        txtCm.text = "0"
-        txtMm.text = "0"
+        txtMetre.text = "0.000"
+        txtMile.text = "0.000"
+        txtCm.text = "0.000"
+        txtMm.text = "0.000"
         txtYard.text = ""
-        txtInch.text = "0"
+        txtInch.text = "0.000"
     }
     @IBAction func txtInch_Selected(_ sender: Any) {
         txtInch.isSelected = true
@@ -222,11 +222,11 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         txtMm.textColor = UIColor.black
         txtYard.textColor = UIColor.black
         //Text
-        txtMetre.text = "0"
-        txtMile.text = "0"
-        txtCm.text = "0"
-        txtMm.text = "0"
-        txtYard.text = "0"
+        txtMetre.text = "0.000"
+        txtMile.text = "0.000"
+        txtCm.text = "0.000"
+        txtMm.text = "0.000"
+        txtYard.text = "0.000"
         txtInch.text = ""
     }
     //End of Selection section

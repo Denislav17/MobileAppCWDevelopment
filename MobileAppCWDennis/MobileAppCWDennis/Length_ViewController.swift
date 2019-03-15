@@ -1029,7 +1029,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         
         //let testUserDefaults = UserDefaults.standard.bool(forKey: "lh")
         let isValid:Bool
-        isValid = UserDefaults.standard.object(forKey: "sh") != nil
+        isValid = UserDefaults.standard.object(forKey: "lh") != nil
         if isValid == true {
             _lengthHistoryArray = UserDefaults.standard.array(forKey: "lh") as! [String]
         } else {

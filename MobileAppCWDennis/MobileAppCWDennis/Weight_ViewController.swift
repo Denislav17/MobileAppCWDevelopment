@@ -698,9 +698,7 @@ class Weight_ViewController: UIViewController {
                 txtPounds.text = "0.000"
             }
             PoundsSelected(Double(txtPounds.text!)!)
-        }
-        //
-            
+        }            
         default:
             break;
         }

@@ -33,7 +33,7 @@ class Temp_ViewController: UIViewController {
         txtFahrenheit.isSelected = false
         txtKelvin.isSelected = false
         
-        _tempHistoryArray = (UserDefaults.standard.array(forKey: "th") as? [String])!
+        _tempHistoryArray = try! (UserDefaults.standard.array(forKey: "th") as? [String])!
         
     }
     @IBAction func txtCelsius_Selected(_ sender: Any) {

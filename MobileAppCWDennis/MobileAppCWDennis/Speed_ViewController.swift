@@ -17,6 +17,8 @@ class Speed_ViewController: UIViewController {
     @IBOutlet weak var lblError: UILabel!
     @IBOutlet weak var Keyboard: UIView!
     
+    private var _speedHistoryArray: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +28,8 @@ class Speed_ViewController: UIViewController {
         txtNautical.isSelected = false
         
         Keyboard.isHidden = true
-
+        
+        LoadUserDefaults()
     }
     //Selected
     @IBAction func txtMetres_Selected(_ sender: Any) {
@@ -640,9 +643,49 @@ class Speed_ViewController: UIViewController {
     //End of Keyboard
     
     //Extra buttons
+    @IBAction func btnSave_Touched(_ sender: Any) {
+        
+        _speedHistoryArray = UserDefaults.standard.array(forKey: "sh") as! [String]
+        
+        let metres = txtMetres.text!
+        let km = txtKm.text!
+        let miles = txtMiles.text!
+        let nautical = txtNautical.text!
+        
+        let stringConcat: String
+        stringConcat = "Metres: " + metres + "\n"
+            + "Kilometers: " + km + "\n"
+            + "Miles: " + miles + "\n"
+            + "Nautical: " + nautical + "\n"
+            + "\n" + "-----------"
+        
+        _speedHistoryArray.append(stringConcat)
+        UserDefaults.standard.set(_speedHistoryArray, forKey: "sh")
+        
+    }
+    
     @IBAction func btnBack_Tapped(_ sender: Any) {
         performSegue(withIdentifier: "Id3_HomePage", sender: self)
     }
-    
+    @IBAction func btnHistory_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id_SpeedHistory", sender: self)
+    }
+    private func LoadUserDefaults() -> Void{
+        
+        let testUserDefaults = UserDefaults.standard.bool(forKey: "sh")
+        if testUserDefaults == false{
+            _speedHistoryArray = UserDefaults.standard.array(forKey: "sh") as! [String]
+        } else {
+            let stringConcat: String
+            stringConcat = "Metres:Loading... " + "\n"
+                + "Kilometers:Loading...  " + "\n"
+                + "Miles:Loading...  " + "\n"
+                + "Nautical:Loading...  " + "\n"
+                + "\n" + "-----------"
+            
+            _speedHistoryArray.append(stringConcat)
+            UserDefaults.standard.set(_speedHistoryArray, forKey: "sh")
+        }
+    }
 
 }

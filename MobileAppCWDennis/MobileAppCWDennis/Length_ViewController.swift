@@ -232,46 +232,46 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
     //End of Selection section
     //Calc section
     func MetreSelected(_ metre:Double) -> Void{
-        txtMile.text = String(format:"%.2f", metre/1609.344)
-        txtCm.text = String(format:"%.2f", metre*100)
-        txtMm.text = String(format:"%.2f", metre*1000)
-        txtYard.text = String(format:"%.2f", metre*1.094)
-        txtInch.text = String(format:"%.2f", metre*39.3701)
+        txtMile.text = String(format:"%.4f", metre/1609.344)
+        txtCm.text = String(format:"%.4f", metre*100)
+        txtMm.text = String(format:"%.4f", metre*1000)
+        txtYard.text = String(format:"%.4f", metre*1.094)
+        txtInch.text = String(format:"%.4f", metre*39.3701)
     }
     func MileSelected(_ mile:Double) -> Void{
-        txtMetre.text = String(format:"%.2f", mile*1609.344)
-        txtCm.text = String(format:"%.2f", mile*160934.4)
-        txtMm.text = String(format:"%.2f", mile*1609344)
-        txtYard.text = String(format:"%.2f", mile*1760)
-        txtInch.text = String(format:"%.2f", mile*63360)
+        txtMetre.text = String(format:"%.4f", mile*1609.344)
+        txtCm.text = String(format:"%.4f", mile*160934.4)
+        txtMm.text = String(format:"%.4f", mile*1609344)
+        txtYard.text = String(format:"%.4f", mile*1760)
+        txtInch.text = String(format:"%.4f", mile*63360)
     }
     func CmSelected(_ cm: Double) -> Void{
-        txtMetre.text = String(format:"%.2f", cm/100)
-        txtMile.text = String(format:"%.2f", cm*160934.4)
-        txtMm.text = String(format:"%.2f", cm*10)
-        txtYard.text = String(format:"%.2f", cm/91.44)
-        txtInch.text = String(format:"%.2f", cm/2.54)
+        txtMetre.text = String(format:"%.4f", cm/100)
+        txtMile.text = String(format:"%.4f", cm*160934.4)
+        txtMm.text = String(format:"%.4f", cm*10)
+        txtYard.text = String(format:"%.4f", cm/91.44)
+        txtInch.text = String(format:"%.4f", cm/2.54)
     }
     func MmSelected(_ mm: Double) -> Void{
-        txtMetre.text = String(format:"%.2f", mm/1000)
-        txtMile.text = String(format:"%.2f", (mm/1000)/1609.344)
-        txtCm.text = String(format:"%.2f", mm/10)
-        txtYard.text = String(format:"%.2f", mm/914.4)
-        txtInch.text = String(format:"%.2f", mm/25.4)
+        txtMetre.text = String(format:"%.4f", mm/1000)
+        txtMile.text = String(format:"%.4f", (mm/1000)/1609.344)
+        txtCm.text = String(format:"%.4f", mm/10)
+        txtYard.text = String(format:"%.4f", mm/914.4)
+        txtInch.text = String(format:"%.4f", mm/25.4)
     }
     func YardSelected(_ yard: Double) -> Void{
-        txtMetre.text = String(format:"%.2f", yard/1.094)
-        txtMile.text = String(format:"%.2f", yard/1760)
-        txtCm.text = String(format:"%.2f", yard*91.44)
-        txtMm.text = String(format:"%.2f", yard*914.4)
-        txtInch.text = String(format:"%.2f", yard*36)
+        txtMetre.text = String(format:"%.4f", yard/1.094)
+        txtMile.text = String(format:"%.4f", yard/1760)
+        txtCm.text = String(format:"%.4f", yard*91.44)
+        txtMm.text = String(format:"%.4f", yard*914.4)
+        txtInch.text = String(format:"%.4f", yard*36)
     }
     func InchSelected(_ inch: Double) -> Void{
-        txtMetre.text = String(format:"%.2f", inch/39.3701)
-        txtMile.text = String(format:"%.2f", inch/63360)
-        txtCm.text = String(format:"%.2f", inch*2.54)
-        txtMm.text = String(format:"%.2f", inch*25.4)
-        txtYard.text = String(format:"%.2f", inch/36)
+        txtMetre.text = String(format:"%.4f", inch/39.3701)
+        txtMile.text = String(format:"%.4f", inch/63360)
+        txtCm.text = String(format:"%.4f", inch*2.54)
+        txtMm.text = String(format:"%.4f", inch*25.4)
+        txtYard.text = String(format:"%.4f", inch/36)
     }
     //end of calculation section
     //Keyboard
@@ -282,7 +282,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 1
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "1"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -291,7 +291,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "1"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -300,7 +300,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "1"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -310,7 +310,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "1"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -320,7 +320,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "1"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -330,7 +330,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "1"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -342,7 +342,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 2
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "2"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -351,7 +351,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "2"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -360,7 +360,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "2"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -370,7 +370,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "2"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -380,7 +380,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "2"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -390,7 +390,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "2"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -402,7 +402,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 3
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "3"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -411,7 +411,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "3"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -420,7 +420,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "3"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -430,7 +430,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "3"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -440,7 +440,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "3"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -450,7 +450,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "3"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -462,7 +462,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 4
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "4"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -471,7 +471,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "4"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -480,7 +480,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "4"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -490,7 +490,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "4"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -500,7 +500,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "4"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -510,7 +510,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "4"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -522,7 +522,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 5
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "5"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -531,7 +531,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "5"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -540,7 +540,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "5"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -550,7 +550,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "5"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -560,7 +560,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "5"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -570,7 +570,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "5"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -582,7 +582,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 6
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "6"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -591,7 +591,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "6"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -600,7 +600,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "6"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -610,7 +610,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "6"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -620,7 +620,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "6"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -630,7 +630,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "6"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -642,7 +642,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 7
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "7"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -651,7 +651,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "7"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -660,7 +660,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "7"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -670,7 +670,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "7"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -680,7 +680,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "7"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -690,7 +690,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "7"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -702,7 +702,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 8
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "8"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -711,7 +711,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "8"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -720,7 +720,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "8"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -730,7 +730,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "8"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -740,7 +740,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "8"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -750,7 +750,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "8"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -762,7 +762,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 9
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
+                if(txtMetre.text == "0.000") {
                     txtMetre.text = "9"
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
@@ -771,7 +771,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
+                if(txtMile.text == "0.000"){
                     txtMile.text = "9"
                     MileSelected(Double(txtMile.text!)!)
                 } else {
@@ -780,7 +780,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
+                if(txtCm.text == "0.000"){
                     txtCm.text = "9"
                     CmSelected(Double(txtCm.text!)!)
                 } else {
@@ -790,7 +790,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
+                if(txtMm.text == "0.000"){
                     txtMm.text = "9"
                     MmSelected(Double(txtMm.text!)!)
                 } else {
@@ -800,7 +800,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
+                if(txtYard.text == "0.000"){
                     txtYard.text = "9"
                     YardSelected(Double(txtYard.text!)!)
                 } else {
@@ -810,7 +810,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
+                if(txtInch.text == "0.000"){
                     txtInch.text = "9"
                     InchSelected(Double(txtInch.text!)!)
                 } else {
@@ -822,8 +822,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             // 0
             if(txtMetre.isSelected)
             {
-                if(txtMetre.text == "0") {
-                    txtMetre.text = "0"
+                if(txtMetre.text == "0.000" || (txtMetre.text?.isEmpty)!) {
+                    txtMetre.text = "0."
                     MetreSelected(Double(txtMetre.text!)!)
                 } else {
                     txtMetre.text = txtMetre.text! + "0"
@@ -831,8 +831,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtMile.isSelected) {
-                if(txtMile.text == "0"){
-                    txtMile.text = "0"
+                if(txtMile.text == "0.000" || (txtMile.text?.isEmpty)!){
+                    txtMile.text = "0."
                     MileSelected(Double(txtMile.text!)!)
                 } else {
                     txtMile.text = txtMile.text! + "0"
@@ -840,8 +840,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 }
             }
             if (txtCm.isSelected){
-                if(txtCm.text == "0"){
-                    txtCm.text = "0"
+                if(txtCm.text == "0.000" || (txtCm.text?.isEmpty)!){
+                    txtCm.text = "0."
                     CmSelected(Double(txtCm.text!)!)
                 } else {
                     txtCm.text = txtCm.text! + "0"
@@ -850,8 +850,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtMm.isSelected)
             {
-                if(txtMm.text == "0"){
-                    txtMm.text = "0"
+                if(txtMm.text == "0.000" || (txtMm.text?.isEmpty)!){
+                    txtMm.text = "0."
                     MmSelected(Double(txtMm.text!)!)
                 } else {
                     txtMm.text = txtMm.text! + "0"
@@ -860,8 +860,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtYard.isSelected)
             {
-                if(txtYard.text == "0"){
-                    txtYard.text = "0"
+                if(txtYard.text == "0.000" || (txtYard.text?.isEmpty)!){
+                    txtYard.text = "0."
                     YardSelected(Double(txtYard.text!)!)
                 } else {
                     txtYard.text = txtYard.text! + "0"
@@ -870,8 +870,8 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
             }
             if(txtInch.isSelected)
             {
-                if(txtInch.text == "0"){
-                    txtInch.text = "0"
+                if(txtInch.text == "0.000" || (txtInch.text?.isEmpty)!){
+                    txtInch.text = "0."
                     InchSelected(Double(txtInch.text!)!)
                 } else {
                     txtInch.text = txtInch.text! + "0"

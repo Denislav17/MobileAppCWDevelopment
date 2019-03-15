@@ -26,6 +26,9 @@
 		9FEC51F622393E8D00685CA2 /* Volume_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */; };
 		9FEC51F822394BAC00685CA2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC51F722394BAC00685CA2 /* logo.png */; };
 		9FEC5218223B01D400685CA2 /* HistoryWeight_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5217223B01D400685CA2 /* HistoryWeight_ViewController.swift */; };
+		9FFD8EFC223C0DDC00C7720C /* Constants_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD8EFB223C0DDC00C7720C /* Constants_TableViewController.swift */; };
+		9FFD8F00223C172300C7720C /* atom-png-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD8EFF223C172300C7720C /* atom-png-10.png */; };
+		9FFD8F02223C1C8800C7720C /* atomlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD8F01223C1C8800C7720C /* atomlogo.png */; };
 		EE227B522237DC7100094700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B512237DC7100094700 /* AppDelegate.swift */; };
 		EE227B542237DC7100094700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE227B532237DC7100094700 /* ViewController.swift */; };
 		EE227B572237DC7100094700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE227B552237DC7100094700 /* Main.storyboard */; };
@@ -56,6 +59,9 @@
 		9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Volume_ViewController.swift; path = MobileAppCWDennis/Volume_ViewController.swift; sourceTree = SOURCE_ROOT; };
 		9FEC51F722394BAC00685CA2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
 		9FEC5217223B01D400685CA2 /* HistoryWeight_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWeight_ViewController.swift; sourceTree = "<group>"; };
+		9FFD8EFB223C0DDC00C7720C /* Constants_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants_TableViewController.swift; sourceTree = "<group>"; };
+		9FFD8EFF223C172300C7720C /* atom-png-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atom-png-10.png"; sourceTree = SOURCE_ROOT; };
+		9FFD8F01223C1C8800C7720C /* atomlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atomlogo.png; sourceTree = SOURCE_ROOT; };
 		EE227B4E2237DC7100094700 /* MobileAppCWDennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppCWDennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE227B512237DC7100094700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE227B532237DC7100094700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 		9FEC51DA22390B4900685CA2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				9FFD8F01223C1C8800C7720C /* atomlogo.png */,
+				9FFD8EFF223C172300C7720C /* atom-png-10.png */,
 				9FEC51F722394BAC00685CA2 /* logo.png */,
 				9FEC51DC22390B6B00685CA2 /* convert.png */,
 				9FEC51E122390B6B00685CA2 /* cubeIcon.png */,
@@ -150,6 +158,7 @@
 				9FEC51EF223926AC00685CA2 /* Speed_ViewController.swift */,
 				9FEC51F32239314600685CA2 /* Length_ViewController.swift */,
 				9FEC51F522393E8D00685CA2 /* Volume_ViewController.swift */,
+				9FFD8EFB223C0DDC00C7720C /* Constants_TableViewController.swift */,
 			);
 			path = MobileAppCWDennis;
 			sourceTree = "<group>";
@@ -229,7 +238,9 @@
 				EE227B5F2237DC7A00094700 /* LaunchScreen.storyboard in Resources */,
 				9FEC51E922390B6C00685CA2 /* saveIocn.png in Resources */,
 				9FEC51EC22390B6C00685CA2 /* speedIcon.png in Resources */,
+				9FFD8F02223C1C8800C7720C /* atomlogo.png in Resources */,
 				9FEC51EA22390B6C00685CA2 /* cubeIcon.png in Resources */,
+				9FFD8F00223C172300C7720C /* atom-png-10.png in Resources */,
 				9FEC51E422390B6C00685CA2 /* distance icon 50p.png in Resources */,
 				9FEC51E622390B6C00685CA2 /* temperature 50p.png in Resources */,
 				EE227B5C2237DC7A00094700 /* Assets.xcassets in Resources */,
@@ -250,6 +261,7 @@
 				9F3D3774223B30F600CC7A7C /* HistoryVolume_ViewController.swift in Sources */,
 				9F3D3770223B1EEF00CC7A7C /* HistorySpeed_ViewController.swift in Sources */,
 				9FEC5218223B01D400685CA2 /* HistoryWeight_ViewController.swift in Sources */,
+				9FFD8EFC223C0DDC00C7720C /* Constants_TableViewController.swift in Sources */,
 				9F3D3772223B2A6100CC7A7C /* HistoryLength_ViewController.swift in Sources */,
 				9FEC51F0223926AC00685CA2 /* Speed_ViewController.swift in Sources */,
 				EE227B542237DC7100094700 /* ViewController.swift in Sources */,

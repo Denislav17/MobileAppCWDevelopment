@@ -19,8 +19,7 @@ class Temp_ViewController: UIViewController {
     @IBOutlet weak var txtCelsius: UITextField!
     @IBOutlet weak var txtFahrenheit: UITextField!
     @IBOutlet weak var txtKelvin: UITextField!
-    @IBOutlet weak var lblError: UILabel!
-    
+    @IBOutlet weak var lblError: UILabel!   
     
     private var _tempHistoryArray: [String] = []
     
@@ -52,8 +51,8 @@ class Temp_ViewController: UIViewController {
         txtKelvin.textColor = UIColor.black
         //Text
         txtCelsius.text = ""
-        txtFahrenheit.text = "0"
-        txtKelvin.text = "0"
+        txtFahrenheit.text = "0.000"
+        txtKelvin.text = "0.000"
     }
     @IBAction func txtFahrenheit_Selected(_ sender: Any) {
         txtFahrenheit.isSelected = true
@@ -70,9 +69,9 @@ class Temp_ViewController: UIViewController {
         txtCelsius.textColor = UIColor.black
         txtKelvin.textColor = UIColor.black
         //Text
-        txtCelsius.text = "0"
+        txtCelsius.text = "0.000"
         txtFahrenheit.text = ""
-        txtKelvin.text = "0"
+        txtKelvin.text = "0.000"
     }
     @IBAction func txtKelvin_Selected(_ sender: Any) {
         txtKelvin.isSelected = true
@@ -89,23 +88,23 @@ class Temp_ViewController: UIViewController {
         txtCelsius.textColor = UIColor.black
         txtFahrenheit.textColor = UIColor.black
         //Text
-        txtCelsius.text = "0"
-        txtFahrenheit.text = "0"
+        txtCelsius.text = "0.000"
+        txtFahrenheit.text = "0.000"
         txtKelvin.text = ""
     }
     
     //Calculations
     func CelsiusSelected(_ celsius: Double) -> Void {
-        txtFahrenheit.text = String(format:"%.2f", (celsius*(9/5) + 32))
-        txtKelvin.text = String(format:"%.2f", (celsius+273.15))
+        txtFahrenheit.text = String(format:"%.4f", (celsius*(9/5) + 32))
+        txtKelvin.text = String(format:"%.4f", (celsius+273.15))
     }
     func FahrenheitSelected(_ fah: Double) -> Void {
-        txtCelsius.text = String(format:"%.2f", ((fah-32)*(5/9)))
-        txtKelvin.text = String(format:"%.2f", ((fah-32)*(5/9)+273.15))
+        txtCelsius.text = String(format:"%.4f", ((fah-32)*(5/9)))
+        txtKelvin.text = String(format:"%.4f", ((fah-32)*(5/9)+273.15))
     }
     func KelvinSelected(_ kelvin: Double) -> Void {
-        txtCelsius.text = String(format: "%.2f", (kelvin-273.15))
-        txtFahrenheit.text = String(format: "%.2f", (kelvin-273.15)*(9/5)+32)
+        txtCelsius.text = String(format: "%.4f", (kelvin-273.15))
+        txtFahrenheit.text = String(format: "%.4f", (kelvin-273.15)*(9/5)+32)
     }
     //End of Calc
     //Keyboard init
@@ -115,7 +114,7 @@ class Temp_ViewController: UIViewController {
             // 1
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "1"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -124,7 +123,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "1"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -133,7 +132,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "1"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -145,7 +144,7 @@ class Temp_ViewController: UIViewController {
             // 2
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "2"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -154,7 +153,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "2"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -163,7 +162,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "2"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -175,7 +174,7 @@ class Temp_ViewController: UIViewController {
             // 3
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "3"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -184,7 +183,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "3"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -193,7 +192,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "3"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -205,7 +204,7 @@ class Temp_ViewController: UIViewController {
             // 4
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "4"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -214,7 +213,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "4"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -223,7 +222,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "4"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -235,7 +234,7 @@ class Temp_ViewController: UIViewController {
             // 5
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "5"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -244,7 +243,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "5"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -253,7 +252,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "5"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -265,7 +264,7 @@ class Temp_ViewController: UIViewController {
             // 6
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "6"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -274,7 +273,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "6"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -283,7 +282,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "6"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -295,7 +294,7 @@ class Temp_ViewController: UIViewController {
             // 7
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "7"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -304,7 +303,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "7"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -313,7 +312,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "7"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -325,7 +324,7 @@ class Temp_ViewController: UIViewController {
             // 8
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "8"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -334,7 +333,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "8"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -343,7 +342,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "8"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -355,7 +354,7 @@ class Temp_ViewController: UIViewController {
             // 9
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
+                if(txtCelsius.text == "0.000") {
                     txtCelsius.text = "9"
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
@@ -364,7 +363,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
+                if(txtFahrenheit.text == "0.000"){
                     txtFahrenheit.text = "9"
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
@@ -373,7 +372,7 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
+                if(txtKelvin.text == "0.000"){
                     txtKelvin.text = "9"
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
@@ -385,8 +384,8 @@ class Temp_ViewController: UIViewController {
             // 0
             if(txtCelsius.isSelected)
             {
-                if(txtCelsius.text == "0") {
-                    txtCelsius.text = "0"
+                if(txtCelsius.text == "0.000" || (txtCelsius.text?.isEmpty)!) {
+                    txtCelsius.text = "0."
                     CelsiusSelected(Double(txtCelsius.text!)!)
                 } else {
                     txtCelsius.text = txtCelsius.text! + "0"
@@ -394,8 +393,8 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtFahrenheit.isSelected) {
-                if(txtFahrenheit.text == "0"){
-                    txtFahrenheit.text = "0"
+                if(txtFahrenheit.text == "0.000" || (txtFahrenheit.text?.isEmpty)!){
+                    txtFahrenheit.text = "0."
                     FahrenheitSelected(Double(txtFahrenheit.text!)!)
                 } else {
                     txtFahrenheit.text = txtFahrenheit.text! + "0"
@@ -403,8 +402,8 @@ class Temp_ViewController: UIViewController {
                 }
             }
             if (txtKelvin.isSelected){
-                if(txtKelvin.text == "0"){
-                    txtKelvin.text = "0"
+                if(txtKelvin.text == "0.000" || (txtKelvin.text?.isEmpty)!){
+                    txtKelvin.text = "0."
                     KelvinSelected(Double(txtKelvin.text!)!)
                 } else {
                     txtKelvin.text = txtKelvin.text! + "0"
@@ -484,7 +483,7 @@ class Temp_ViewController: UIViewController {
                 KelvinSelected(Double(txtKelvin.text!)!)
             }
         case "CLEAR":
-            txtCelsius.text = "0"
+            txtCelsius.text = "0.000"
             txtCelsius.isSelected = true
             txtFahrenheit.isSelected = false
             txtKelvin.isSelected = false

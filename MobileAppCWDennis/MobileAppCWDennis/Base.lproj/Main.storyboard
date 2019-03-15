@@ -2336,10 +2336,6 @@
         <image name="temperature 50p.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nGO-xi-fr1"/>
-        <segue reference="GPk-8S-XNG"/>
-        <segue reference="XPd-Pe-oGd"/>
-        <segue reference="fh2-UM-ge7"/>
         <segue reference="68P-cy-O0b"/>
         <segue reference="ukK-hX-Znf"/>
         <segue reference="JMW-B7-CZf"/>

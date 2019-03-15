@@ -25,6 +25,8 @@ class HistorySpeed_ViewController: UIViewController {
         for stringItem in speedHistoryArray.prefix(5) {
             HistoryTextView.text = HistoryTextView.text + stringItem + "\n"
         }
+        speedHistoryArray.reverse()
+        UserDefaults.standard.set(speedHistoryArray, forKey: "sh")
     }
     
     @IBAction func btnBack_Touched(_ sender: Any) {

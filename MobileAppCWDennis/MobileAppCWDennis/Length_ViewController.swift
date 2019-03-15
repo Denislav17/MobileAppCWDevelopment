@@ -21,7 +21,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var lblError: UILabel!
     @IBOutlet weak var Keyboard: UIView!
     
-        private var _lengthHistoryArray: [String] = []
+    private var _lengthHistoryArray: [String] = []
     //end of textboxes init
     override func viewDidLoad() {
         super.viewDidLoad()

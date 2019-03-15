@@ -33,7 +33,7 @@ class Temp_ViewController: UIViewController {
         txtFahrenheit.isSelected = false
         txtKelvin.isSelected = false
         
-        _tempHistoryArray = try! (UserDefaults.standard.array(forKey: "th") as? [String])!
+        LoadUserDefaults()
         
     }
     @IBAction func txtCelsius_Selected(_ sender: Any) {
@@ -501,6 +501,7 @@ class Temp_ViewController: UIViewController {
     //Extra buttons init
     @IBAction func btnSave_Touched(_ sender: Any) {
         
+        _tempHistoryArray = UserDefaults.standard.array(forKey: "th") as! [String]
         let celsius = txtCelsius.text!
         let fahr = txtFahrenheit.text!
         let kelvin = txtKelvin.text!
@@ -519,6 +520,23 @@ class Temp_ViewController: UIViewController {
     @IBAction func btnHistory_Touched(_ sender: Any) {
         performSegue(withIdentifier: "Id_TempHistory", sender: self)
     }
-    
+    private func LoadUserDefaults() -> Void{
+        
+        //let testUserDefaults = UserDefaults.standard.bool(forKey: "lh")
+        let isValid:Bool
+        isValid = UserDefaults.standard.object(forKey: "th") != nil
+        if isValid == true {
+            _tempHistoryArray = UserDefaults.standard.array(forKey: "th") as! [String]
+        } else {
+            let stringConcat: String
+            stringConcat = "Celsius:Loading... " + "\n"
+                + "Fahrenheit:Loading...  " + "\n"
+                + "Kelvin:Loading...  " + "\n"
+                + "\n" + "-----------"
+            
+            _tempHistoryArray.append(stringConcat)
+            UserDefaults.standard.set(_tempHistoryArray, forKey: "th")
+        }
+    }
 
 }

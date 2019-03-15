@@ -672,8 +672,9 @@ class Speed_ViewController: UIViewController {
     }
     private func LoadUserDefaults() -> Void{
         
-        let testUserDefaults = UserDefaults.standard.bool(forKey: "sh")
-        if testUserDefaults == false{
+        let isValid:Bool
+        isValid = UserDefaults.standard.object(forKey: "sh") != nil
+        if isValid == true {
             _speedHistoryArray = UserDefaults.standard.array(forKey: "sh") as! [String]
         } else {
             let stringConcat: String

@@ -26,6 +26,8 @@ class HistoryTemperature_ViewController: UIViewController {
         for stringItem in tempHistoryArray.prefix(5) {
             HistoryTextVIew.text = HistoryTextVIew.text + stringItem + "\n"
         }
+        tempHistoryArray.reverse()
+        UserDefaults.standard.set(tempHistoryArray, forKey: "th")
     }
     
     @IBAction func btnBack_Touched(_ sender: Any) {

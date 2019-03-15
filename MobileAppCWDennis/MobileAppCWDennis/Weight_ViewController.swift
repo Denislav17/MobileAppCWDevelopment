@@ -37,12 +37,9 @@ class Weight_ViewController: UIViewController {
         txtPounds.isSelected = false
         txtStone.isSelected = false
         txtPound.isSelected = false
-
-        do {
-            _weightHistoryArray = UserDefaults.standard.array(forKey: "wh") as! [String]
-        } catch {
-           print("no such array")
-        }
+        
+        LoadUserDefaults()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -730,6 +727,9 @@ class Weight_ViewController: UIViewController {
         //Extra buttons
     @IBAction func btnSave_Touched(_ sender: Any) {
         //saving txt fields data into variables
+        
+        _weightHistoryArray = UserDefaults.standard.array(forKey: "wh") as! [String]
+        
         let kg = Double(txtKg.text!)
         let gr = Double(txtGrams.text!)
         let ounce = Double(txtOunces.text!)
@@ -740,17 +740,38 @@ class Weight_ViewController: UIViewController {
         
 
         let stringConcat: String
-        stringConcat = "kg: " + String(kg!) + "\n"
-            + "gr: " + String(gr!) + "\n"
-            + "ounce: " + String(ounce!) + "\n"
-            + "pounds: " + String(pounds!) + "\n"
-            + "stone-pounds: " + String(stone!) + String(pound!)
+        stringConcat = "Kg: " + String(kg!) + "\n"
+            + "Gr: " + String(gr!) + "\n"
+            + "Ounce: " + String(ounce!) + "\n"
+            + "Pounds: " + String(pounds!) + "\n"
+            + "Stone-pounds: " + String(stone!) + String(pound!)
             + "\n" + "-----------"
         _weightHistoryArray.append(stringConcat)
         UserDefaults.standard.set(_weightHistoryArray, forKey: "wh")
     }
     @IBAction func btnHistoryPage_Touched(_ sender: Any) {
         performSegue(withIdentifier: "Id_WeightHistory", sender: self)
+    }
+    
+    private func LoadUserDefaults() -> Void{
+        
+        //let testUserDefaults = UserDefaults.standard.bool(forKey: "lh")
+        let isValid:Bool
+        isValid = UserDefaults.standard.object(forKey: "wh") != nil
+        if isValid == true {
+            _weightHistoryArray = UserDefaults.standard.array(forKey: "wh") as! [String]
+        } else {
+            let stringConcat: String
+            stringConcat = "Kg:Loading... " + "\n"
+                + "Gr:Loading...  " + "\n"
+                + "Ounce:Loading...  " + "\n"
+                + "Pounds:Loading...  " + "\n"
+                + "Stone-pounds:Loading...  " + "\n"
+                + "\n" + "-----------"
+            
+            _weightHistoryArray.append(stringConcat)
+            UserDefaults.standard.set(_weightHistoryArray, forKey: "wh")
+        }
     }
     
 }

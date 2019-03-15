@@ -61,10 +61,10 @@ class Volume_ViewController: UIViewController {
         txtMl.textColor = UIColor.black
         //Text
         txtGallon.text = ""
-        txtLitre.text = "0"
-        txtPint.text = "0"
-        txtFluidOunce.text = "0"
-        txtMl.text = "0"
+        txtLitre.text = "0.000"
+        txtPint.text = "0.000"
+        txtFluidOunce.text = "0.000"
+        txtMl.text = "0.000"
     }
     @IBAction func txtLitre_Selected(_ sender: Any) {
         txtLitre.isSelected = true
@@ -87,11 +87,11 @@ class Volume_ViewController: UIViewController {
         txtFluidOunce.textColor = UIColor.black
         txtMl.textColor = UIColor.black
         //Text
-        txtGallon.text = "0"
+        txtGallon.text = "0.000"
         txtLitre.text = ""
-        txtPint.text = "0"
-        txtFluidOunce.text = "0"
-        txtMl.text = "0"
+        txtPint.text = "0.000"
+        txtFluidOunce.text = "0.000"
+        txtMl.text = "0.000"
     }
     @IBAction func txtPint_Selected(_ sender: Any) {
         txtPint.isSelected = true
@@ -114,11 +114,11 @@ class Volume_ViewController: UIViewController {
         txtFluidOunce.textColor = UIColor.black
         txtMl.textColor = UIColor.black
         //Text
-        txtGallon.text = "0"
-        txtLitre.text = "0"
+        txtGallon.text = "0.000"
+        txtLitre.text = "0.000"
         txtPint.text = ""
-        txtFluidOunce.text = "0"
-        txtMl.text = "0"
+        txtFluidOunce.text = "0.000"
+        txtMl.text = "0.000"
     }
     @IBAction func txtFluidOunce_Selected(_ sender: Any) {
         txtFluidOunce.isSelected = true
@@ -141,11 +141,11 @@ class Volume_ViewController: UIViewController {
         txtPint.textColor = UIColor.black
         txtMl.textColor = UIColor.black
         //Text
-        txtGallon.text = "0"
-        txtLitre.text = "0"
-        txtPint.text = "0"
+        txtGallon.text = "0.000"
+        txtLitre.text = "0.000"
+        txtPint.text = "0.000"
         txtFluidOunce.text = ""
-        txtMl.text = "0"
+        txtMl.text = "0.000"
     }
     @IBAction func txtMl_Selected(_ sender: Any) {
         txtMl.isSelected = true
@@ -169,10 +169,10 @@ class Volume_ViewController: UIViewController {
         txtPint.textColor = UIColor.black
         txtFluidOunce.textColor = UIColor.black
         //Text
-        txtGallon.text = "0"
-        txtLitre.text = "0"
-        txtPint.text = "0"
-        txtFluidOunce.text = "0"
+        txtGallon.text = "0.000"
+        txtLitre.text = "0.000"
+        txtPint.text = "0.000"
+        txtFluidOunce.text = "0.000"
         txtMl.text = ""
     }
     
@@ -180,34 +180,34 @@ class Volume_ViewController: UIViewController {
     
     //Calc Section
     func GallonSelected(_ gallon:Double) -> Void{
-        txtLitre.text = String(format:"%.2f", gallon*4.546)
-        txtPint.text = String(format:"%.2f", gallon*8)
-        txtFluidOunce.text = String(format:"%.2f", gallon*160)
-        txtMl.text = String(format:"%.2f", gallon*4546.09)
+        txtLitre.text = String(format:"%.4f", gallon*4.546)
+        txtPint.text = String(format:"%.4f", gallon*8)
+        txtFluidOunce.text = String(format:"%.4f", gallon*160)
+        txtMl.text = String(format:"%.4f", gallon*4546.09)
     }
     func LitreSelected(_ litre:Double) -> Void{
-        txtGallon.text = String(format:"%.2f", litre/4.546)
-        txtPint.text = String(format:"%.2f", litre*1.76)
-        txtFluidOunce.text = String(format:"%.2f", litre*35.195)
-        txtMl.text = String(format:"%.2f", litre*1000)
+        txtGallon.text = String(format:"%.4f", litre/4.546)
+        txtPint.text = String(format:"%.4f", litre*1.76)
+        txtFluidOunce.text = String(format:"%.4f", litre*35.195)
+        txtMl.text = String(format:"%.4f", litre*1000)
     }
     func PintSelected(_ pint: Double) -> Void{
-        txtGallon.text = String(format:"%.2f", pint/8)
-        txtLitre.text = String(format:"%.2f", pint/1.76)
-        txtFluidOunce.text = String(format:"%.2f", pint*20)
-        txtMl.text = String(format:"%.2f", pint*568.261)
+        txtGallon.text = String(format:"%.4f", pint/8)
+        txtLitre.text = String(format:"%.4f", pint/1.76)
+        txtFluidOunce.text = String(format:"%.4f", pint*20)
+        txtMl.text = String(format:"%.4f", pint*568.261)
     }
     func FluidOunceSelected(_ ounce: Double) -> Void{
-        txtGallon.text = String(format:"%.2f", ounce/160)
-        txtLitre.text = String(format:"%.2f", ounce/35.195)
-        txtPint.text = String(format:"%.2f", ounce/20)
-        txtMl.text = String(format:"%.2f", ounce*28.413)
+        txtGallon.text = String(format:"%.4f", ounce/160)
+        txtLitre.text = String(format:"%.4f", ounce/35.195)
+        txtPint.text = String(format:"%.4f", ounce/20)
+        txtMl.text = String(format:"%.4f", ounce*28.413)
     }
     func MlSelected(_ ml: Double) -> Void{
-        txtGallon.text = String(format:"%.2f", ml/4546.09)
-        txtLitre.text = String(format:"%.2f", ml/1000)
-        txtPint.text = String(format:"%.2f", ml/568.261)
-        txtFluidOunce.text = String(format:"%.2f", ml/28.413)
+        txtGallon.text = String(format:"%.4f", ml/4546.09)
+        txtLitre.text = String(format:"%.4f", ml/1000)
+        txtPint.text = String(format:"%.4f", ml/568.261)
+        txtFluidOunce.text = String(format:"%.4f", ml/28.413)
     }
     //End of Calc section
     //Keyboard
@@ -217,7 +217,7 @@ class Volume_ViewController: UIViewController {
             // 1
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "1"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -226,7 +226,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "1"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -235,7 +235,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "1"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -245,7 +245,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "1"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -255,7 +255,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "1"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -267,7 +267,7 @@ class Volume_ViewController: UIViewController {
             // 2
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "2"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -276,7 +276,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "2"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -285,7 +285,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "2"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -295,7 +295,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "2"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -305,7 +305,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "2"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -317,7 +317,7 @@ class Volume_ViewController: UIViewController {
             // 3
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "3"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -326,7 +326,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "3"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -335,7 +335,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "3"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -345,7 +345,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "3"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -355,7 +355,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "3"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -367,7 +367,7 @@ class Volume_ViewController: UIViewController {
             // 4
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "4"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -376,7 +376,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "4"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -385,7 +385,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "4"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -395,7 +395,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "4"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -405,7 +405,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "4"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -417,7 +417,7 @@ class Volume_ViewController: UIViewController {
             // 5
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "5"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -426,7 +426,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "5"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -435,7 +435,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "5"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -445,7 +445,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "5"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -455,7 +455,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "5"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -467,7 +467,7 @@ class Volume_ViewController: UIViewController {
             // 6
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "6"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -476,7 +476,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "6"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -485,7 +485,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "6"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -495,7 +495,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "6"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -505,7 +505,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "6"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -517,7 +517,7 @@ class Volume_ViewController: UIViewController {
             // 7
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "7"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -526,7 +526,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "7"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -535,7 +535,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "7"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -545,7 +545,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "7"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -555,7 +555,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "7"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -567,7 +567,7 @@ class Volume_ViewController: UIViewController {
             // 8
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "8"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -576,7 +576,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "8"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -585,7 +585,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "8"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -595,7 +595,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "8"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -605,7 +605,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "8"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -617,7 +617,7 @@ class Volume_ViewController: UIViewController {
             // 9
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
+                if(txtGallon.text == "0.000") {
                     txtGallon.text = "9"
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
@@ -626,7 +626,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
+                if(txtLitre.text == "0.000"){
                     txtLitre.text = "9"
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
@@ -635,7 +635,7 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
+                if(txtPint.text == "0.000"){
                     txtPint.text = "9"
                     PintSelected(Double(txtPint.text!)!)
                 } else {
@@ -645,7 +645,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
+                if(txtFluidOunce.text == "0.000"){
                     txtFluidOunce.text = "9"
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
@@ -655,7 +655,7 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
+                if(txtMl.text == "0.000"){
                     txtMl.text = "9"
                     MlSelected(Double(txtMl.text!)!)
                 } else {
@@ -667,8 +667,8 @@ class Volume_ViewController: UIViewController {
             // 0
             if(txtGallon.isSelected)
             {
-                if(txtGallon.text == "0") {
-                    txtGallon.text = "0"
+                if(txtGallon.text == "0.000" || (txtGallon.text?.isEmpty)!) {
+                    txtGallon.text = "0."
                     GallonSelected(Double(txtGallon.text!)!)
                 } else {
                     txtGallon.text = txtGallon.text! + "0"
@@ -676,8 +676,8 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtLitre.isSelected) {
-                if(txtLitre.text == "0"){
-                    txtLitre.text = "0"
+                if(txtLitre.text == "0.000" || (txtLitre.text?.isEmpty)!){
+                    txtLitre.text = "0."
                     LitreSelected(Double(txtLitre.text!)!)
                 } else {
                     txtLitre.text = txtLitre.text! + "0"
@@ -685,8 +685,8 @@ class Volume_ViewController: UIViewController {
                 }
             }
             if (txtPint.isSelected){
-                if(txtPint.text == "0"){
-                    txtPint.text = "0"
+                if(txtPint.text == "0.000" || (txtPint.text?.isEmpty)!){
+                    txtPint.text = "0."
                     PintSelected(Double(txtPint.text!)!)
                 } else {
                     txtPint.text = txtPint.text! + "0"
@@ -695,8 +695,8 @@ class Volume_ViewController: UIViewController {
             }
             if(txtFluidOunce.isSelected)
             {
-                if(txtFluidOunce.text == "0"){
-                    txtFluidOunce.text = "0"
+                if(txtFluidOunce.text == "0.000" || (txtFluidOunce.text?.isEmpty)!){
+                    txtFluidOunce.text = "0."
                     FluidOunceSelected(Double(txtFluidOunce.text!)!)
                 } else {
                     txtFluidOunce.text = txtFluidOunce.text! + "0"
@@ -705,8 +705,8 @@ class Volume_ViewController: UIViewController {
             }
             if(txtMl.isSelected)
             {
-                if(txtMl.text == "0"){
-                    txtMl.text = "0"
+                if(txtMl.text == "0.000" || (txtMl.text?.isEmpty)!){
+                    txtMl.text = "0."
                     MlSelected(Double(txtMl.text!)!)
                 } else {
                     txtMl.text = txtMl.text! + "0"
@@ -773,7 +773,7 @@ class Volume_ViewController: UIViewController {
                 txtGallon.text = String((txtGallon.text?.dropLast())!)
                 if(txtGallon.text == "")
                 {
-                    txtGallon.text = "0"
+                    txtGallon.text = "0.000"
                 }
                 GallonSelected(Double(txtGallon.text!)!)
             }
@@ -782,7 +782,7 @@ class Volume_ViewController: UIViewController {
                 txtLitre.text = String((txtLitre.text?.dropLast())!)
                 if(txtLitre.text == "")
                 {
-                    txtLitre.text = "0"
+                    txtLitre.text = "0.000"
                 }
                 LitreSelected(Double(txtLitre.text!)!)
             }
@@ -790,7 +790,7 @@ class Volume_ViewController: UIViewController {
                 txtPint.text = String((txtPint.text?.dropLast())!)
                 if(txtPint.text == "")
                 {
-                    txtPint.text = "0"
+                    txtPint.text = "0.000"
                 }
                 PintSelected(Double(txtPint.text!)!)
             }
@@ -799,7 +799,7 @@ class Volume_ViewController: UIViewController {
                 txtFluidOunce.text = String((txtFluidOunce.text?.dropLast())!)
                 if(txtFluidOunce.text == "")
                 {
-                    txtFluidOunce.text = "0"
+                    txtFluidOunce.text = "0.000"
                 }
                 FluidOunceSelected(Double(txtFluidOunce.text!)!)
             }
@@ -808,12 +808,12 @@ class Volume_ViewController: UIViewController {
                 txtMl.text = String((txtMl.text?.dropLast())!)
                 if(txtMl.text == "")
                 {
-                    txtMl.text = "0"
+                    txtMl.text = "0.000"
                 }
                 MlSelected(Double(txtMl.text!)!)
             }
         case "CLEAR":
-            txtGallon.text = "0"
+            txtGallon.text = "0.000"
             txtLitre.isSelected = true
             txtPint.isSelected = false
             txtFluidOunce.isSelected = false

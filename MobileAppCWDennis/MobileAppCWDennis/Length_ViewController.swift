@@ -928,7 +928,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtMetre.text = String((txtMetre.text?.dropLast())!)
                 if(txtMetre.text == "")
                 {
-                    txtMetre.text = "0"
+                    txtMetre.text = "0.000"
                 }
                 MetreSelected(Double(txtMetre.text!)!)
             }
@@ -937,7 +937,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtMile.text = String((txtMile.text?.dropLast())!)
                 if(txtMile.text == "")
                 {
-                    txtMile.text = "0"
+                    txtMile.text = "0.000"
                 }
                 MileSelected(Double(txtMile.text!)!)
             }
@@ -945,7 +945,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtCm.text = String((txtCm.text?.dropLast())!)
                 if(txtCm.text == "")
                 {
-                    txtCm.text = "0"
+                    txtCm.text = "0.000"
                 }
                 CmSelected(Double(txtCm.text!)!)
             }
@@ -954,7 +954,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtMm.text = String((txtMm.text?.dropLast())!)
                 if(txtMm.text == "")
                 {
-                    txtMm.text = "0"
+                    txtMm.text = "0.000"
                 }
                 MmSelected(Double(txtMm.text!)!)
             }
@@ -963,7 +963,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtYard.text = String((txtYard.text?.dropLast())!)
                 if(txtYard.text == "")
                 {
-                    txtYard.text = "0"
+                    txtYard.text = "0.000"
                 }
                 YardSelected(Double(txtYard.text!)!)
             }
@@ -972,12 +972,12 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
                 txtInch.text = String((txtInch.text?.dropLast())!)
                 if(txtInch.text == "")
                 {
-                    txtInch.text = "0"
+                    txtInch.text = "0.000"
                 }
                 InchSelected(Double(txtInch.text!)!)
             }
         case "CLEAR":
-            txtMetre.text = "0"
+            txtMetre.text = "0.000"
             txtMile.isSelected = true
             txtCm.isSelected = false
             txtMm.isSelected = false

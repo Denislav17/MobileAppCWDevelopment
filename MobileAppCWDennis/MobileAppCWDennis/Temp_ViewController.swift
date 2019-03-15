@@ -458,7 +458,7 @@ class Temp_ViewController: UIViewController {
                 txtCelsius.text = String((txtCelsius.text?.dropLast())!)
                 if(txtCelsius.text == "" || txtCelsius.text == "-")
                 {
-                    txtCelsius.text = "0"
+                    txtCelsius.text = "0.000"
                 }
                 lblError.text = ""
                 CelsiusSelected(Double(txtCelsius.text!)!)
@@ -468,7 +468,7 @@ class Temp_ViewController: UIViewController {
                 txtFahrenheit.text = String((txtFahrenheit.text?.dropLast())!)
                 if(txtFahrenheit.text == "" || txtFahrenheit.text == "-")
                 {
-                    txtFahrenheit.text = "0"
+                    txtFahrenheit.text = "0.000"
                 }
                 lblError.text = ""
                 FahrenheitSelected(Double(txtFahrenheit.text!)!)
@@ -477,7 +477,7 @@ class Temp_ViewController: UIViewController {
                 txtKelvin.text = String((txtKelvin.text?.dropLast())!)
                 if(txtKelvin.text == "" || txtKelvin.text == "-")
                 {
-                    txtKelvin.text = "0"
+                    txtKelvin.text = "0.000"
                 }
                 lblError.text = ""
                 KelvinSelected(Double(txtKelvin.text!)!)

@@ -21,6 +21,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var lblError: UILabel!
     @IBOutlet weak var Keyboard: UIView!
     
+        private var _lengthHistoryArray: [String] = []
     //end of textboxes init
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
         
         Keyboard.isHidden = true
         
-        
+        LoadUserDefaults()
         
     }
     //Selection section
@@ -993,8 +994,57 @@ class Length_ViewController: UIViewController, UITextFieldDelegate{
     
     //End of Keyboard
     //Extra Buttons
+    @IBAction func btnSave_Touched(_ sender: Any) {
+        
+        _lengthHistoryArray = UserDefaults.standard.array(forKey: "lh") as! [String]
+        
+        let metre = txtMetre.text!
+        let mile = txtMile.text!
+        let cm = txtCm.text!
+        let mm = txtMm.text!
+        let yard = txtYard.text!
+        let inch = txtInch.text!
+        
+        let stringConcat: String
+        stringConcat = "Metre: " + metre + "\n"
+            + "Mile: " + mile + "\n"
+            + "Cm: " + cm + "\n"
+            + "Mm: " + mm + "\n"
+            + "Yard: " + yard + "\n"
+            + "Inch: " + inch + "\n"
+            + "\n" + "-----------"
+        
+        _lengthHistoryArray.append(stringConcat)
+        UserDefaults.standard.set(_lengthHistoryArray, forKey: "lh")
+        
+    }
+    
     @IBAction func btnBack_Touched(_ sender: Any) {
         performSegue(withIdentifier: "Id4_HomePage", sender: self)
+    }
+    @IBAction func btnHistory_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id_LengthHistory", sender: self)
+    }
+    private func LoadUserDefaults() -> Void{
+        
+        //let testUserDefaults = UserDefaults.standard.bool(forKey: "lh")
+        let isValid:Bool
+        isValid = UserDefaults.standard.object(forKey: "sh") != nil
+        if isValid == true {
+            _lengthHistoryArray = UserDefaults.standard.array(forKey: "lh") as! [String]
+        } else {
+            let stringConcat: String
+            stringConcat = "Metre:Loading... " + "\n"
+                + "Mile:Loading...  " + "\n"
+                + "Cm:Loading...  " + "\n"
+                + "Mm:Loading...  " + "\n"
+                + "Yard:Loading...  " + "\n"
+                + "Inch:Loading...  " + "\n"
+                + "\n" + "-----------"
+            
+            _lengthHistoryArray.append(stringConcat)
+            UserDefaults.standard.set(_lengthHistoryArray, forKey: "lh")
+        }
     }
     
 }

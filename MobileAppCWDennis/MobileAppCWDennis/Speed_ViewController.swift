@@ -52,9 +52,9 @@ class Speed_ViewController: UIViewController {
         
         //Text
         txtMetres.text = ""
-        txtKm.text = "0"
-        txtMiles.text = "0"
-        txtNautical.text = "0"
+        txtKm.text = "0.000"
+        txtMiles.text = "0.000"
+        txtNautical.text = "0.000"
     }
     @IBAction func txtKm_Selected(_ sender: Any) {
         txtKm.isSelected = true
@@ -75,10 +75,10 @@ class Speed_ViewController: UIViewController {
         txtNautical.textColor = UIColor.black
         
         //Text
-        txtMetres.text = "0"
+        txtMetres.text = "0.000"
         txtKm.text = ""
-        txtMiles.text = "0"
-        txtNautical.text = "0"
+        txtMiles.text = "0.000"
+        txtNautical.text = "0.000"
     }
     @IBAction func txtMiles_Selected(_ sender: Any) {
         txtMiles.isSelected = true
@@ -98,10 +98,10 @@ class Speed_ViewController: UIViewController {
         txtKm.textColor = UIColor.black
         txtNautical.textColor = UIColor.black
         //Text
-        txtMetres.text = "0"
-        txtKm.text = "0"
+        txtMetres.text = "0.000"
+        txtKm.text = "0.000"
         txtMiles.text = ""
-        txtNautical.text = "0"
+        txtNautical.text = "0.000"
     }
     @IBAction func txtNautical_Selected(_ sender: Any) {
         txtNautical.isSelected = true
@@ -121,9 +121,9 @@ class Speed_ViewController: UIViewController {
         txtKm.textColor = UIColor.black
         txtMiles.textColor = UIColor.black
         //Text
-        txtMetres.text = "0"
-        txtKm.text = "0"
-        txtMiles.text = "0"
+        txtMetres.text = "0.000"
+        txtKm.text = "0.000"
+        txtMiles.text = "0.000"
         txtNautical.text = ""
     }   
     
@@ -131,24 +131,24 @@ class Speed_ViewController: UIViewController {
     //End of Selected
     //Calc
     func MetresSelected(_ metre:Double) -> Void{
-        txtKm.text = String(format:"%.2f", metre*3.6)
-        txtMiles.text = String(format:"%.2f", 	metre*2.237)
-        txtNautical.text = String(format:"%.2f", (metre*3.6)/1.852)
+        txtKm.text = String(format:"%.4f", metre*3.6)
+        txtMiles.text = String(format:"%.4f", 	metre*2.237)
+        txtNautical.text = String(format:"%.4f", (metre*3.6)/1.852)
     }
     func KilometersSelected(_ km:Double) -> Void{
-        txtMetres.text = String(format:"%.2f", km/3.6)
-        txtMiles.text = String(format:"%.2f", km/1.609)
-        txtNautical.text = String(format:"%.2f", km/1.852)
+        txtMetres.text = String(format:"%.4f", km/3.6)
+        txtMiles.text = String(format:"%.4f", km/1.609)
+        txtNautical.text = String(format:"%.4f", km/1.852)
     }
     func MilesSelected(_ mile: Double) -> Void{
-        txtMetres.text = String(format:"%.2f", mile/2.237)
-        txtKm.text = String(format:"%.2f", mile*1.609)
-        txtNautical.text = String(format:"%.2f", (mile*1.609)/1.852)
+        txtMetres.text = String(format:"%.4f", mile/2.237)
+        txtKm.text = String(format:"%.4f", mile*1.609)
+        txtNautical.text = String(format:"%.4f", (mile*1.609)/1.852)
     }
     func NauticalSelected(_ nautical: Double) -> Void{
-        txtMetres.text = String(format:"%.2f", (nautical*1.852)/3.6)
-        txtKm.text = String(format:"%.2f", nautical*1.852)
-        txtMiles.text = String(format:"%.2f", (nautical*1.852)/1.609)
+        txtMetres.text = String(format:"%.4f", (nautical*1.852)/3.6)
+        txtKm.text = String(format:"%.4f", nautical*1.852)
+        txtMiles.text = String(format:"%.4f", (nautical*1.852)/1.609)
     }
     //End of Calc
     //Keyboard
@@ -158,7 +158,7 @@ class Speed_ViewController: UIViewController {
             // 1
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "1"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -167,7 +167,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "1"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -176,7 +176,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "1"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -186,7 +186,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "1"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -198,7 +198,7 @@ class Speed_ViewController: UIViewController {
             // 2
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "2"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -207,7 +207,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "2"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -216,7 +216,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "2"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -226,7 +226,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "2"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -238,7 +238,7 @@ class Speed_ViewController: UIViewController {
             // 3
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "3"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -247,7 +247,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "3"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -256,7 +256,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "3"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -266,7 +266,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "3"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -278,7 +278,7 @@ class Speed_ViewController: UIViewController {
             // 4
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "4"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -287,7 +287,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "4"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -296,7 +296,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "4"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -306,7 +306,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "4"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -318,7 +318,7 @@ class Speed_ViewController: UIViewController {
             // 5
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "5"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -327,7 +327,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "5"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -336,7 +336,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "5"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -346,7 +346,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "5"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -358,7 +358,7 @@ class Speed_ViewController: UIViewController {
             // 6
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "6"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -367,7 +367,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "6"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -376,7 +376,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "6"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -386,7 +386,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "6"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -398,7 +398,7 @@ class Speed_ViewController: UIViewController {
             // 7
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "7"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -407,7 +407,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "7"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -416,7 +416,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "7"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -426,7 +426,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "7"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -438,7 +438,7 @@ class Speed_ViewController: UIViewController {
             // 8
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "8"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -447,7 +447,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "8"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -456,7 +456,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "8"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -466,7 +466,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "8"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -478,7 +478,7 @@ class Speed_ViewController: UIViewController {
             // 9
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
+                if(txtMetres.text == "0.000") {
                     txtMetres.text = "9"
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
@@ -487,7 +487,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
+                if(txtKm.text == "0.000"){
                     txtKm.text = "9"
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
@@ -496,7 +496,7 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
+                if(txtMiles.text == "0.000"){
                     txtMiles.text = "9"
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
@@ -506,7 +506,7 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
+                if(txtNautical.text == "0.000"){
                     txtNautical.text = "9"
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
@@ -518,8 +518,8 @@ class Speed_ViewController: UIViewController {
             // 0
             if(txtMetres.isSelected)
             {
-                if(txtMetres.text == "0") {
-                    txtMetres.text = "0"
+                if(txtMetres.text == "0.000" || (txtMetres.text?.isEmpty)!) {
+                    txtMetres.text = "0."
                     MetresSelected(Double(txtMetres.text!)!)
                 } else {
                     txtMetres.text = txtMetres.text! + "0"
@@ -527,8 +527,8 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtKm.isSelected) {
-                if(txtKm.text == "0"){
-                    txtKm.text = "0"
+                if(txtKm.text == "0.000" || (txtKm.text?.isEmpty)!){
+                    txtKm.text = "0."
                     KilometersSelected(Double(txtKm.text!)!)
                 } else {
                     txtKm.text = txtKm.text! + "0"
@@ -536,8 +536,8 @@ class Speed_ViewController: UIViewController {
                 }
             }
             if (txtMiles.isSelected){
-                if(txtMiles.text == "0"){
-                    txtMiles.text = "0"
+                if(txtMiles.text == "0.000" || (txtMiles.text?.isEmpty)!){
+                    txtMiles.text = "0."
                     MilesSelected(Double(txtMiles.text!)!)
                 } else {
                     txtMiles.text = txtMiles.text! + "0"
@@ -546,8 +546,8 @@ class Speed_ViewController: UIViewController {
             }
             if(txtNautical.isSelected)
             {
-                if(txtNautical.text == "0"){
-                    txtNautical.text = "0"
+                if(txtNautical.text == "0.000" || (txtNautical.text?.isEmpty)!){
+                    txtNautical.text = "0."
                     NauticalSelected(Double(txtNautical.text!)!)
                 } else {
                     txtNautical.text = txtNautical.text! + "0"
@@ -604,7 +604,7 @@ class Speed_ViewController: UIViewController {
                 txtMetres.text = String((txtMetres.text?.dropLast())!)
                 if(txtMetres.text == "")
                 {
-                    txtMetres.text = "0"
+                    txtMetres.text = "0.000"
                 }
                 MetresSelected(Double(txtMetres.text!)!)
             }
@@ -613,7 +613,7 @@ class Speed_ViewController: UIViewController {
                 txtKm.text = String((txtKm.text?.dropLast())!)
                 if(txtKm.text == "")
                 {
-                    txtKm.text = "0"
+                    txtKm.text = "0.000"
                 }
                 KilometersSelected(Double(txtKm.text!)!)
             }
@@ -621,7 +621,7 @@ class Speed_ViewController: UIViewController {
                 txtMiles.text = String((txtMiles.text?.dropLast())!)
                 if(txtMiles.text == "")
                 {
-                    txtMiles.text = "0"
+                    txtMiles.text = "0.000"
                 }
                 MilesSelected(Double(txtMiles.text!)!)
             }
@@ -630,7 +630,7 @@ class Speed_ViewController: UIViewController {
                 txtNautical.text = String((txtNautical.text?.dropLast())!)
                 if(txtNautical.text == "")
                 {
-                    txtNautical.text = "0"
+                    txtNautical.text = "0.000"
                 }
                 NauticalSelected(Double(txtNautical.text!)!)
             }

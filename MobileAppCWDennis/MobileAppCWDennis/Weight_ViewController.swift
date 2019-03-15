@@ -579,43 +579,43 @@ class Weight_ViewController: UIViewController {
                     PoundsSelected(Double(txtPounds.text!)!)
                 }
             }
-        case "0.000":
+        case "0":
             // 0
             if(txtKg.isSelected)
             {
-                if(txtKg.text == "0.000") {
-                    txtKg.text = "0"
+                if(txtKg.text == "0.000" || (txtKg.text?.isEmpty)!) {
+                    txtKg.text = "0."
                     KilogramsSelected(Double(txtKg.text!)!)
                 } else {
-                    txtKg.text = txtKg.text! + "0.000"
+                    txtKg.text = txtKg.text! + "0"
                     KilogramsSelected(Double(txtKg.text!)!)
                 }
             }
             if (txtGrams.isSelected) {
-                if(txtGrams.text == "0.000"){
-                    txtGrams.text = "0.000"
+                if(txtGrams.text == "0.000" || (txtGrams.text?.isEmpty)!){
+                    txtGrams.text = "0."
                     GramsSelected(Double(txtGrams.text!)!)
                 } else {
-                    txtGrams.text = txtGrams.text! + "0.000"
+                    txtGrams.text = txtGrams.text! + "0"
                     GramsSelected(Double(txtGrams.text!)!)
                 }
             }
             if (txtOunces.isSelected){
-                if(txtOunces.text == "0.000"){
-                    txtOunces.text = "0.000"
+                if(txtOunces.text == "0.000" || (txtOunces.text?.isEmpty)!){
+                    txtOunces.text = "0."
                     OuncesSelected(Double(txtOunces.text!)!)
                 } else {
-                    txtOunces.text = txtOunces.text! + "0.000"
+                    txtOunces.text = txtOunces.text! + "0"
                     OuncesSelected(Double(txtOunces.text!)!)
                 }
             }
             if(txtPounds.isSelected)
             {
-                if(txtPounds.text == "0.000"){
-                    txtPounds.text = "0.000"
+                if(txtPounds.text == "0.000" || (txtPounds.text?.isEmpty)!){
+                    txtPounds.text = "0."
                     PoundsSelected(Double(txtPounds.text!)!)
                 } else {
-                    txtPounds.text = txtPounds.text! + "0.000"
+                    txtPounds.text = txtPounds.text! + "0"
                     PoundsSelected(Double(txtPounds.text!)!)
                 }
             }

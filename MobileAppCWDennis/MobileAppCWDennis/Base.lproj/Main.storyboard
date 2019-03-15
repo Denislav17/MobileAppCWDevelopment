@@ -1865,9 +1865,15 @@
                                         <rightBarButtonItems>
                                             <barButtonItem title="Item" image="saveIocn.png" id="WHp-gu-FhB">
                                                 <color key="tintColor" red="0.91855818033218384" green="0.24207863211631775" blue="0.39379590749740601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="btnSave_Touched:" destination="mcC-zY-W36" id="y45-oh-O9a"/>
+                                                </connections>
                                             </barButtonItem>
                                             <barButtonItem title="Item" image="history-512.png" id="KCW-Gl-jNU">
                                                 <color key="tintColor" red="0.91855818033218384" green="0.24207863211631775" blue="0.39379590749740601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="btnHistory_Touched:" destination="mcC-zY-W36" id="pSJ-wG-R5Z"/>
+                                                </connections>
                                             </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
@@ -2230,6 +2236,7 @@
                         <outlet property="txtMl" destination="idP-QA-JWA" id="ObY-41-qpO"/>
                         <outlet property="txtPint" destination="RSI-fe-BDJ" id="Mah-cb-g1a"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="Id5_HomePage" id="ELo-ej-pR8"/>
+                        <segue destination="DgP-Hx-vm6" kind="presentation" identifier="Id_VolumeHistory" id="XPd-Pe-oGd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1a2-dg-pCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2255,6 +2262,69 @@
             </objects>
             <point key="canvasLocation" x="1016.8" y="31.934032983508249"/>
         </scene>
+        <!--History Volume View Controller-->
+        <scene sceneID="lJS-Of-HcQ">
+            <objects>
+                <viewController id="DgP-Hx-vm6" customClass="HistoryVolume_ViewController" customModule="MobileAppCWDennis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jIJ-nS-eAW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjo-oQ-2wj">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-p7-8nF">
+                                        <rect key="frame" x="0.0" y="52" width="343" height="575"/>
+                                        <color key="backgroundColor" red="0.91855818033218384" green="0.24207863211631775" blue="0.39379590749740601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="scrollIndicatorInsets" minX="0.0" minY="16" maxX="0.0" maxY="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3t0-cC-Acx">
+                                        <rect key="frame" x="0.0" y="8" width="343" height="44"/>
+                                        <items>
+                                            <navigationItem title="Speed Page History View" id="4ZH-RF-dQL">
+                                                <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="pX6-Jn-1QB">
+                                                    <color key="tintColor" red="0.91855818030000003" green="0.2420786321" blue="0.39379590749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="btnBack_Touched:" destination="DgP-Hx-vm6" id="PnO-on-NXU"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3t0-cC-Acx" secondAttribute="trailing" id="7bq-GH-p5s"/>
+                                    <constraint firstItem="3t0-cC-Acx" firstAttribute="leading" secondItem="kjo-oQ-2wj" secondAttribute="leading" id="HnW-xl-TYB"/>
+                                    <constraint firstItem="3t0-cC-Acx" firstAttribute="top" secondItem="kjo-oQ-2wj" secondAttribute="topMargin" id="Ij5-qm-VGF"/>
+                                    <constraint firstItem="Eze-p7-8nF" firstAttribute="leading" secondItem="3t0-cC-Acx" secondAttribute="leading" id="PIS-EX-Ugy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eze-p7-8nF" secondAttribute="bottom" id="Z9T-C7-ZUb"/>
+                                    <constraint firstItem="Eze-p7-8nF" firstAttribute="trailing" secondItem="3t0-cC-Acx" secondAttribute="trailing" id="lDv-4A-NXN"/>
+                                    <constraint firstItem="Eze-p7-8nF" firstAttribute="top" secondItem="3t0-cC-Acx" secondAttribute="bottom" id="ogj-rg-xhF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kjo-oQ-2wj" firstAttribute="leading" secondItem="jIJ-nS-eAW" secondAttribute="leadingMargin" id="BH7-w9-XEl"/>
+                            <constraint firstAttribute="bottom" secondItem="kjo-oQ-2wj" secondAttribute="bottom" constant="20" symbolic="YES" id="UeT-kA-eXE"/>
+                            <constraint firstItem="kjo-oQ-2wj" firstAttribute="trailing" secondItem="jIJ-nS-eAW" secondAttribute="trailingMargin" id="VSr-5M-VnK"/>
+                            <constraint firstItem="kjo-oQ-2wj" firstAttribute="top" secondItem="Zpw-zZ-OLp" secondAttribute="top" id="WJ5-GF-Lgh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zpw-zZ-OLp"/>
+                    </view>
+                    <connections>
+                        <outlet property="HistoryTextView" destination="Eze-p7-8nF" id="Iub-jZ-fJk"/>
+                        <segue destination="mcC-zY-W36" kind="presentation" identifier="OpenVolumePage" id="68P-cy-O0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEf-PL-2JE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="32"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Kg_weight 50p.png" width="50" height="50"/>
@@ -2266,10 +2336,15 @@
         <image name="temperature 50p.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nGO-xi-fr1"/>
+        <segue reference="GPk-8S-XNG"/>
+        <segue reference="XPd-Pe-oGd"/>
+        <segue reference="fh2-UM-ge7"/>
+        <segue reference="68P-cy-O0b"/>
         <segue reference="ukK-hX-Znf"/>
         <segue reference="JMW-B7-CZf"/>
         <segue reference="Nff-O9-BeK"/>
         <segue reference="1yB-Fc-b3c"/>
-        <segue reference="LAa-2h-ehl"/>
+        <segue reference="ELo-ej-pR8"/>
     </inferredMetricsTieBreakers>
 </document>

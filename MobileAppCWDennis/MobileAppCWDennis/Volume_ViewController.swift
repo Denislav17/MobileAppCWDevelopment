@@ -22,6 +22,8 @@ class Volume_ViewController: UIViewController {
     
     //end of textfields init()
     
+   private var _volumeHistoryArray: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +34,8 @@ class Volume_ViewController: UIViewController {
         txtMl.isSelected = false
         
         Keyboard.isHidden = true
+        
+        LoadUserDefaults()
     }
     
     //Selected Section
@@ -826,10 +830,53 @@ class Volume_ViewController: UIViewController {
     
     
     //Extra buttons
-    @IBAction func btnBack_Touched(_ sender: Any) {
-        performSegue(withIdentifier: "Id5_HomePage", sender: self)
+    @IBAction func btnSave_Touched(_ sender: Any) {
+        
+        _volumeHistoryArray = UserDefaults.standard.array(forKey: "vh") as! [String]
+        
+        let gallon = txtGallon.text!
+        let litre = txtLitre.text!
+        let pint = txtPint.text!
+        let fluidounce = txtFluidOunce.text!
+        let mil = txtMl.text!
+        
+        let stringConcat: String
+        stringConcat = "Gallon: " + gallon + "\n"
+            + "Litre: " + litre + "\n"
+            + "Pint: " + pint + "\n"
+            + "F. Ounce: " + fluidounce + "\n"
+            + "Mil: " + mil + "\n"
+            + "\n" + "-----------"
+        
+        _volumeHistoryArray.append(stringConcat)
+        UserDefaults.standard.set(_volumeHistoryArray, forKey: "vh")
         
     }
-    
+    @IBAction func btnBack_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id5_HomePage", sender: self)
+    }
+    @IBAction func btnHistory_Touched(_ sender: Any) {
+        performSegue(withIdentifier: "Id_VolumeHistory", sender: self)
+    }
+    private func LoadUserDefaults() -> Void{
+        
+        //let testUserDefaults = UserDefaults.standard.bool(forKey: "lh")
+        let isValid:Bool
+        isValid = UserDefaults.standard.object(forKey: "vh") != nil
+        if isValid == true {
+            _volumeHistoryArray = UserDefaults.standard.array(forKey: "vh") as! [String]
+        } else {
+            let stringConcat: String
+            stringConcat = "Gallon:Loading... " + "\n"
+                + "Litre:Loading...  " + "\n"
+                + "Pint:Loading...  " + "\n"
+                + "F. Ounce:Loading...  " + "\n"
+                + "Mil:Loading...  " + "\n"
+                + "\n" + "-----------"
+            
+            _volumeHistoryArray.append(stringConcat)
+            UserDefaults.standard.set(_volumeHistoryArray, forKey: "vh")
+        }
+    }
 
 }

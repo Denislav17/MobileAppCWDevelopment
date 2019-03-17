@@ -24,19 +24,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func btnWeight_Clicked(_ sender: UIButton) {
+    @IBAction func btnWeight_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_WeightPage", sender:self)
     }
-    @IBAction func btnTemp_Clicked(_ sender: UIButton) {
+    @IBAction func btnTemp_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_TempPage", sender: self)
     }
-    @IBAction func btnSpeed_Clicked(_ sender: UIButton) {
+    @IBAction func btnSpeed_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_SpeedPage", sender: self)
     }
-    @IBAction func btnLength_Clicked(_ sender: UIButton) {
+    @IBAction func btnLength_Clicked(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "Id_LengthPage", sender: self)
     }
-    @IBAction func btnVolume_Clicked(_ sender: UIButton) {
+    @IBAction func btnVolume_Clicked(_ sender: UIBarButtonItem) {
          performSegue(withIdentifier: "Id_VolumePage", sender: self)
     }
     @IBAction func btnConstant_Clicked(_ sender: Any) {
